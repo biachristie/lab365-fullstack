@@ -83,6 +83,22 @@
     calculateMeanGrade (3, "mathematics");
     calculateMeanGrade (4, "mathematics");
 
+    // --------------------------------------------------------------------------------------------
+    // Exercício 05
+
+    let sumGradeStudents2 = 0;
+
+    for (let i = 0; i < student.length; i++) {
+        sumGradeStudents2 += student[i].mathematics;
+        var meanGradeStudents2 = sumGradeStudents2/student.length;
+    }
+    
+    console.log(`A média dos alunos é ${meanGradeStudents2.toFixed(2)}.`);
+
+    for (let i = 0; i < student.length; i++) {        
+        calculateMeanGrade([i], "mathematics");
+    }
+
     </script>
 </body>
 </html>

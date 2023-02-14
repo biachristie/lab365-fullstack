@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./userArea.css">
+    <title>App LoginStart</title>
+</head>
+<body onload="getLocalData()">
+    <div class="userArea__bar">
+        <div class="userArea__bar-text">
+            <h1 id="userArea__bar-text-title">User Area</h1>
+            <span id="userArea__bar-text-subtitle">Edit your account and personal details</span>
+        </div>
+        <div class="userArea__bar-logoutBtn">
+            <button onclick="logOut()">Log out</button>
+        </div>
+    </div>
+    <div class="userArea__loginDetails">
+        <div class="userArea__loginDetails-basic">
+            <div class="userArea__loginDetails-basic-avatar">
+                <img src="" alt="User Avatar" height="90px" border="1px" id="avatar">
+                <button onclick="editAvatar()">Edit avatar</button>
+            </div>
+            <div>
+                <span id="userArea__loginDetails-username">Username</span>
+            </div>
+        </div>
+        <div class="userArea__loginDetails-title-form">
+            <span>User Details</span>
+            <hr>
+        </div>
+        <form action="#" method="post" class="userArea__loginDetails-form">
+            <div class="userArea__loginDetails-form-field">
+                <label for="form-name">Name</label>
+                <input type="text" placeholder="Enter your name" id="name">
+                <button onclick="saveInfo('name')">Save</button>
+            </div>
+            <div class="userArea__loginDetails-form-field">
+                <label for="form-lastname">Last Name</label>
+                <input type="text" placeholder="Enter your lastname" id="lastname">
+                <button onclick="saveInfo('lastname')">Save</button>
+            </div>
+            <div class="userArea__loginDetails-form-field">
+                <label for="form-username">Username</label>
+                <input type="text" placeholder="Enter your username" id="username">
+                <button onclick="saveInfo('username')">Save</button>
+            </div>
+            <div class="userArea__loginDetails-form-field">
+                <label for="form-password">Password</label>
+                <input type="text" placeholder="Enter your password" id="password">
+                <button onclick="saveInfo('password')">Save</button>
+            </div>
+            <div class="userArea__loginDetails-form-field">
+                <label for="form-email">E-mail</label>
+                <input type="email" placeholder="Enter your e-mail" id="email">
+                <button onclick="saveInfo('email')">Save</button>
+            </div>
+        </form>
+    </div>
+
+<script src="../login/login.js"></script>
+</body>
+</html>

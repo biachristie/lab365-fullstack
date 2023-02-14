@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.userArea__bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+    margin-bottom: 5rem;
+}
+
+.userArea__bar-logoutBtn > button {
+    padding: 0.3rem 0.7rem;
+}
+
+.userArea__loginDetails {
+    margin: 0 2rem;
+}
+
+.userArea__loginDetails-basic {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.userArea__loginDetails-basic-avatar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.userArea__loginDetails-basic-avatar > img {
+    border-radius: 1rem;
+}
+
+.userArea__loginDetails-basic-avatar > button {
+    width: 5rem;
+    margin-top: 0.4rem;
+    padding: 0.25rem;
+}
+
+.userArea__loginDetails-title-form > span {
+    font-size: 1.3rem;
+}
+
+.userArea__loginDetails-title-form > hr {
+    border-bottom: 0px solid #818181;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+}
+
+.userArea__loginDetails-form-field {
+    margin-top: 1.3rem;
+    display: flex;
+}
+
+.userArea__loginDetails-form-field > label {
+    display: inline-flex;
+    align-items: center;
+    width: 8rem;
+}
+
+.userArea__loginDetails-form-field > input {
+    width: 20rem;
+    padding: 0.4rem;
+}
+
+.userArea__loginDetails-form-field > button {
+    margin-left: 0.5rem;
+    padding: 0.3rem 1rem;
+}

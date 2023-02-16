@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content > h1 {
+    margin-top: 5rem;
+}
+
+.true {
+    text-decoration: line-through;
+}
+
+#contentInput {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+#contentInput > button, #editedTaskDiv > button {
+    font-size: x-large;
+    color: #fff;
+    background-color: #9780F1;
+    padding: 0.5rem;
+    width: 3rem;
+    border: none;
+    cursor: pointer;
+}
+
+#taskInput, #editedTask {
+    text-align: center;
+    padding: 0.6rem 1rem;
+    width: 30rem;
+    margin-right: 0.2rem;
+}
+
+#list {
+    margin-top: 3rem;
+}
+
+div[id*="outerDiv"] {
+    width: 35.5rem;
+    height: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+#innerDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f3f3f3;
+    height: 100%;
+}
+
+#innerDiv-text {
+    margin-left: 1rem;
+}
+
+#innerDiv-button {
+    height: 100%;
+}
+
+#innerDiv-button > button {
+    font-size: large;
+    background: none;
+    height: 100%;
+    width: 1.3rem;
+    margin-right: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+#deleteButton {
+    color: #be3455;
+}
+
+#editButton {
+    color: #69A3FF;
+}
+
+#doneButton {
+    color: #1fbd7b;
+}
+
+#editedTaskDiv {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+#editedTaskDiv > button {
+    background-color: #69A3FF;
+}

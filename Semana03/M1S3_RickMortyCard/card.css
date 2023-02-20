@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap');
+
+:root {
+    /* CSS HEX */
+    --platinum: #dee5e5;
+    --iris-blue: #02b1c8;
+    --taupe-gray: #8b8589;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.content__title {
+    margin: 3rem auto 0;
+    display: flex;
+    justify-content: center;
+}
+
+.content__title > img {
+    height: 10rem;
+    filter: drop-shadow(5px 5px 1px #8b85896e);
+}
+
+.content__container {
+    margin: auto;
+    width: 600px;
+    display: flex;
+}
+
+.card {
+    position: relative;
+    width: 13.5rem;
+    height: 28rem;
+    margin: 5rem auto;
+    border-radius: 1.2rem;
+    box-shadow: -1px 15px 30px -12px #000;
+    background-color: var(--platinum);
+    display: inline-block;
+    z-index: 9999;
+}
+
+.card__top {
+    background-color: var(--iris-blue);
+    border-top-left-radius: 1.2rem;
+    border-top-right-radius: 1.2rem;
+}
+
+.card__top-image {
+    position: relative;
+    height: 9.5rem;
+    margin-bottom: 3rem;
+}
+
+.card__top-image > img {
+    box-sizing: border-box;
+    width: 10rem;
+    position: absolute;
+    top: 1.5rem;
+    left: 1.9rem;
+    border: 10px solid var(--iris-blue);
+    border-radius: 100%;
+}
+
+.card__bottom-title {
+    color: var(--iris-blue);
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 700;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__bottom-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__bottom-description-itens > span {
+    color: var(--taupe-gray);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.card__bottom-description-itens {
+    display: flex;
+    flex-direction: row;
+    padding-left: 1.4rem;
+    padding-right: 0.6rem;
+    margin-bottom: 0.6rem;
+}
+
+.card__bottom-description-itens > i {
+    font-size: 0.9rem;
+    margin-right: 0.75rem;
+}
+
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#leftArrow, #rightArrow {
+    position: sticky;
+    top: 31.5rem;
+}
+
+i[class*="fa-solid"]{
+    color: var(--iris-blue);
+}

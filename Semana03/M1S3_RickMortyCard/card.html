@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/35a8fc139b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="card.css">
+    <title>Ricky & Morty Cards</title>
+</head>
+<body>
+    <div class="content__title">
+        <img src="./assets/RM-logo.png" alt="Rick and Morty" >
+    </div>
+    <div class="content__container">
+        <div class="container__leftArrow">
+            <a id="leftArrow" class="disabled" href="http://">
+                <i class="fa-solid fa-circle-arrow-left fa-2x"></i>
+            </a>
+        </div>
+        <div class="card">
+            <div class="card__top">
+                <div class="card__top-image">
+                    <img id="cardImage" src="" alt="Image of Rick Sanchez" >
+                </div>
+            </div>
+            <div class="card__bottom">
+                <div id="title" class="card__bottom-title">Rick Sanchez</div>
+                <div class="card__bottom-description">
+                    <div class="card__bottom-description-itens">
+                        <i class="fa-solid fa-heart-pulse fa-fw"></i>
+                        <span id="status">Alive</span>
+                    </div>
+                    <div class="card__bottom-description-itens">
+                        <i class="fa-solid fa-user fa-fw"></i>
+                        <span id="species">Human</span>
+                    </div>
+                    <div class="card__bottom-description-itens">
+                        <i class="fa-solid fa-map-location-dot fa-fw"></i>
+                        <span id="origin">Earth (C-137)</span>
+                    </div>
+                    <div class="card__bottom-description-itens">
+                        <i class="fa-solid fa-location-dot fa-fw"></i>
+                        <span id="location">Citadel of Ricks</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container__rightArrow">
+            <a id="rightArrow" class="" href="http://">
+                <i class="fa-solid fa-circle-arrow-right fa-2x"></i>
+            </a>
+        </div>
+    </div>
+
+    <script src="card.js"></script>
+</body>
+</html>

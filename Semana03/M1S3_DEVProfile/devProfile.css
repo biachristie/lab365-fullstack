@@ -19,7 +19,7 @@ a:link, a:visited {
     margin: 5rem auto 0;
     background-color: #083753;
     border-radius: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: -1px 15px 30px -12px #000;
 }
 
 .basicInfo {

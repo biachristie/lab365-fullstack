@@ -4,9 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="alarme.css">
     <title>Alarme</title>
 </head>
 <body>
+    <div class="content">
+        <div class="content__title">
+            <h1>Birthday Alarm</h1>
+        </div>
+        <div class="content__input">
+            <label for="inputBirthday" id="inputLabel">Enter birthday:</label>
+            <input type="date" name="inputBirthday" id="inputBirthday" placeholder="DD/MM/YYYY">
+            <button type="submit" id="inputButton">Set Up Alarm</button>
+        </div>
+        <div class="content__alarm">
+            <p id="alarmText"></p>
+        </div>
+    </div>
+
     <script src="./alarme.js"></script>
 </body>
 </html>

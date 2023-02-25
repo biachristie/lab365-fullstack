@@ -16,13 +16,13 @@ function calculateDays() {
 function displayAlarm(differenceInDays) {
     idInterval = setInterval(() => {
         if (differenceInDays < 0) {
-            document.querySelector("#alarmText").innerText = `Seu aniversário já passou.`;
+            document.querySelector("#alarmText").innerText = `The birthday has already passed.`;
         } else if (differenceInDays === 0) {
-            document.querySelector("#alarmText").innerText = `🎉🎉 Feliz aniversário!!! 🎉🎉`;
+            document.querySelector("#alarmText").innerText = `🎉🎉 Happy birthday!!! 🎉🎉`;
         } else if (differenceInDays === 1) {
-            document.querySelector("#alarmText").innerText = `Falta ${differenceInDays} dia para seu aniversário.`;
+            document.querySelector("#alarmText").innerText = `There is only ${differenceInDays} day until the birthday!`;
         } else if (differenceInDays > 1) {
-            document.querySelector("#alarmText").innerText = `Faltam ${differenceInDays} dias para o aniversário!`;
+            document.querySelector("#alarmText").innerText = `There are ${differenceInDays} days until the birthday!`;
         }
     }, 1000);
 }

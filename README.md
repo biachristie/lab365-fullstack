@@ -9,13 +9,12 @@
 </div>
 <br>
 
-Curso de capacitação EAD oferecido pelo Lab365 / SENAI-SC aos alunos selecionados a partir do programa Floripa Mais Tec. Esse curso tem como objetivo repassar os conhecimentos necessários a um desenvolvedor FullStack.
+Curso de capacitação EAD oferecido pelo Lab365 / SENAI-SC aos alunos selecionados a partir do programa Floripa Mais Tec. Esse curso tem como objetivo repassar os conhecimentos necessários à formação de um desenvolvedor FullStack.
 
 <br>
 
 **Início**: 30/01/2023 | **Término**: 16/04/2023
 
-<br>
 <br>
 
 ## Atividades

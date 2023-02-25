@@ -18,42 +18,29 @@ class BankAccount {
         this.#password = newPassword;
     }
 
-    makeDeposit() {
-        const password = prompt("Enter password account:");
+    makeDeposit(deposit, password) {
         if (password !== this.#password) throw new Error("Invalid password");
-
-        const deposit = Number(prompt("Enter deposit value: "));
-        if (typeof withdraw != Number) throw new Error("Invalid value.");
+        if (!Number(deposit)) throw new Error("Invalid value.");
         if (deposit <= 0) throw new Error("Invalid value");
 
         this.balance += deposit;
         return Number(this.balance.toFixed(2));
     }
 
-    makeWithdraw() {
-        const password = prompt("Enter password account:");
+    makeWithdraw(withdraw, password) {
         if (password !== this.#password) throw new Error("Invalid password");
+        if (!Number(withdraw)) throw new Error ("Invalid value.");
+        if (withdraw === 0) throw new Error("Invalid value.");
+        if (withdraw > this.balance) throw new Error("Insuficient balance.");
 
-        let withdraw;
-        do {
-            withdraw = Number(prompt("Enter withdraw value: "));
-            if (typeof withdraw != Number) throw new Error ("Invalid value.");
-            if (withdraw === 0) throw new Error("Invalid value.");
-
-            if (withdraw <= this.balance) {
-                this.balance -= withdraw;
-                return Number(this.balance.toFixed(2));
-            } else {
-                console.error("Insufficient balance.")
-            }
-        } while (withdraw > this.balance);
+        this.balance -= withdraw;
+        return Number(this.balance.toFixed(2));
     }
 }
 
 const checkingAccount = new BankAccount(100.00, "Lab365");
-
-// checkingAccount.makeDeposit();
-// checkingAccount.makeWithdraw();
+// checkingAccount.makeDeposit(10, "Lab365");
+// checkingAccount.makeWithdraw(10, "Lab365");
 
 // --------------------------------------------------------------------------------------------
 // Exercício 02
@@ -70,7 +57,6 @@ class savingAccount extends BankAccount {
 }
 
 const savingAccountA = new savingAccount(100.00, "Lab365");
-
 // savingAccountA.updateInterest();
 
 // --------------------------------------------------------------------------------------------
@@ -83,11 +69,9 @@ class premiumSavingAccount extends savingAccount {
 
     updateInterest() {
         this.balance += (this.balance * 0.012);
-        console.log(this.balance)
         return Number(this.balance.toFixed(2));
     }
 }
 
 const premiumSavingAccountA = new premiumSavingAccount(100.00, "Lab365");
-
 // premiumSavingAccountA.updateInterest();

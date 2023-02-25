@@ -27,22 +27,26 @@ Curso de capacitação EAD oferecido pelo Lab365 / SENAI-SC aos alunos seleciona
 
 **Semana 01**
 
-*  JavaScript: instalação do ambiente (VS Code com Live Server) ✔️
+* JavaScript: instalação do ambiente (VS Code com Live Server) ✔️
 * Introdução ao JS, variáveis e tipos de dados, operadores (aritméticos, lógicos e relacionais), *arrays*, listas e estrutura de controle de fluxo (condicional e repetição) ✔️
 * GitHub: importância, utilização, instalação e boas práticas ✔️
 * Trello: importância, utilização do Kanban, instalação e boas práticas ✔️
+* [Exercícios](https://github.com/biachristie/lab365-fullstack/tree/main/Semana01)
 
 **Semana 02**
 
 * Apresentação do ES6+, escopo (let, var e const), objetos, JSON, funções, *arrow functions*, *local storage*, interval e timeout ✔️
+* [Exercícios](https://github.com/biachristie/lab365-fullstack/tree/main/Semana02)
 
 **Semana 03**
 
 * Operadores Rest e Spread, módulos (export e import), funções de *arrays* (forEach, map, filter, find, reduce e every), funções assíncronas (promises, async e await) e fetch ✔️
+* [Exercícios](https://github.com/biachristie/lab365-fullstack/tree/main/Semana03)
 
 **Semana 04**
 
 * O que é POO, classes, atributos, encapsulamento (closure), herança e polimorfismo ✔️
+* [Exercícios](https://github.com/biachristie/lab365-fullstack/tree/main/Semana04)
 
 **Semana 05**
 
@@ -72,12 +76,12 @@ Curso de capacitação EAD oferecido pelo Lab365 / SENAI-SC aos alunos seleciona
 **MÓDULO 2**
 
 **Início**: 01/05/2023 | **Término**: 20/10/2023
-<br>
-<br>
+`<br>`
+`<br>`
 
 **Semana 01**
 
-*  Introdução à metodologias ágeis, Scrum (papéis, artefatos e rotinas), revisão de versionamento e GitHub com Squads e GitFlow
+* Introdução à metodologias ágeis, Scrum (papéis, artefatos e rotinas), revisão de versionamento e GitHub com Squads e GitFlow
 
 **Semana 02**
 
@@ -122,8 +126,8 @@ Curso de capacitação EAD oferecido pelo Lab365 / SENAI-SC aos alunos seleciona
 **MÓDULO 3**
 
 **Início**: 31/07/2023 | **Término**: 20/10/2023
-<br>
-<br>
+`<br>`
+`<br>`
 
 **Semana 01**
 

@@ -1,3 +1,6 @@
+// --------------------------------------------------------------------------------------------
+// Exercício 01
+
 import { Product } from "./classes/product.js";
 import { CashRegister } from "./classes/cashRegister.js";
 

@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------
-// Exercício 01
+// Exercício 02
 
 class BankAccount {
     balance;
@@ -43,7 +43,7 @@ const checkingAccount = new BankAccount(100.00, "Lab365");
 // checkingAccount.makeWithdraw(10, "Lab365");
 
 // --------------------------------------------------------------------------------------------
-// Exercício 02
+// Exercício 03
 
 class savingAccount extends BankAccount {
     constructor(balance, password) {
@@ -60,7 +60,7 @@ const savingAccountA = new savingAccount(100.00, "Lab365");
 // savingAccountA.updateInterest();
 
 // --------------------------------------------------------------------------------------------
-// Exercício 03
+// Exercício 04
 
 class premiumSavingAccount extends savingAccount {
     constructor(balance, password) {

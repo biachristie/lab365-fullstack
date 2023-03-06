@@ -9,6 +9,10 @@
 </div>
 <br>
 
+
+
+✔️
+
 Curso de capacitação EAD oferecido pelo Lab365 / SENAI-SC aos alunos selecionados a partir do programa Floripa Mais Tec. Esse curso tem como objetivo repassar os conhecimentos necessários à formação de um desenvolvedor FullStack.
 
 <br>
@@ -22,8 +26,8 @@ Curso de capacitação EAD oferecido pelo Lab365 / SENAI-SC aos alunos seleciona
 **MÓDULO 1**
 
 **Início**: 30/01/2023 | **Término**: 21/04/2023
-<br>
-<br>
+`<br>`
+`<br>`
 
 **Semana 01**
 
@@ -50,7 +54,8 @@ Curso de capacitação EAD oferecido pelo Lab365 / SENAI-SC aos alunos seleciona
 
 **Semana 05**
 
-* O que é uma API, conhecendo *frameworks* (Express.js e Next.js), configuração de ambiente Node, *package manager*, introdução ao Express.js (instalação, características, compilação e execução do primeiro projeto) e servindo arquivos estáticos
+* O que é uma API, conhecendo *frameworks* (Express.js e Next.js), configuração de ambiente Node, *package manager*, introdução ao Express.js (instalação, características, compilação e execução do primeiro projeto) e servindo arquivos estáticos ✔️
+* Exercícios
 
 **Semana 06**
 

@@ -1,6 +1,6 @@
 function generateLink() {
     const phoneNumber = document.getElementById("phoneNumber");
-    const message = document.getElementById("message").value.replace(" ", "%20");
+    const message = document.getElementById("message").value.replaceAll(" ", "%20");
     const link = document.getElementById("divLink");
 
     link.innerHTML = `

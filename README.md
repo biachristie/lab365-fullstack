@@ -10,28 +10,25 @@
 <br>
 
 
-
-✔️
-
 Curso de capacitação EAD oferecido pelo Lab365 / SENAI-SC aos alunos selecionados a partir do programa Floripa Mais Tec. Esse curso tem como objetivo repassar os conhecimentos necessários à formação de um desenvolvedor FullStack.
 
 <br>
 
-**Início**: 30/01/2023 | **Término**: 16/04/2023
+**Início**: 30/01/2023 | **Término**: 20/10/2023
 
 <br>
 
 ## Atividades
 
-**MÓDULO 1**
+**MÓDULO 1 - BACKEND** 
 
 **Início**: 30/01/2023 | **Término**: 21/04/2023
-`<br>`
-`<br>`
+<br>
+<br>
 
 **Semana 01**
 
-* JavaScript: instalação do ambiente (VS Code com Live Server) ✔️
+* JavaScript: instalação do ambiente (VS Code com *Live Server*) ✔️
 * Introdução ao JS, variáveis e tipos de dados, operadores (aritméticos, lógicos e relacionais), *arrays*, listas e estrutura de controle de fluxo (condicional e repetição) ✔️
 * GitHub: importância, utilização, instalação e boas práticas ✔️
 * Trello: importância, utilização do Kanban, instalação e boas práticas ✔️
@@ -55,7 +52,7 @@ Curso de capacitação EAD oferecido pelo Lab365 / SENAI-SC aos alunos seleciona
 **Semana 05**
 
 * O que é uma API, conhecendo *frameworks* (Express.js e Next.js), configuração de ambiente Node, *package manager*, introdução ao Express.js (instalação, características, compilação e execução do primeiro projeto) e servindo arquivos estáticos ✔️
-* Exercícios
+* [Exercícios](https://github.com/biachristie/lab365-fullstack/tree/main/Semana05)
 
 **Semana 06**
 
@@ -78,11 +75,11 @@ Curso de capacitação EAD oferecido pelo Lab365 / SENAI-SC aos alunos seleciona
 <br>
 <br>
 
-**MÓDULO 2**
+**MÓDULO 2 - FRONTEND**
 
 **Início**: 01/05/2023 | **Término**: 20/10/2023
-`<br>`
-`<br>`
+<br>
+<br>
 
 **Semana 01**
 
@@ -103,23 +100,23 @@ Curso de capacitação EAD oferecido pelo Lab365 / SENAI-SC aos alunos seleciona
 
 **Semana 05 e 6**
 
-* Introdução, renderização de componentes, Props e Proptypes
+* Introdução, renderização de componentes, *Props* e *Proptypes*
 
 **Semana 07**
 
-* Hooks principais (useState, useEffect e useRef), eventos e renderização de listas
+* *Hooks* principais (useState, useEffect e useRef), eventos e renderização de listas
 
 **Semana 08**
 
-* Hooks avançados (useReducer e useContext), React Router e formulários
+* *Hooks* avançados (useReducer e useContext), React Router e formulários
 
 **Semana 09**
 
-* Prop Drilling, componentes de classe (com revisão de herança e polimorfismo) e lifecycles
+* *Prop Drilling*, componentes de classe (com revisão de herança e polimorfismo) e *lifecycles*
 
 **Semana 10**
 
-* Composition, estilos (Styled Components e Bootstrap), Developer Tools e Deploy
+* *Composition*, estilos (Styled Components e Bootstrap), *Developer Tools* e *Deploy*
 
 **Semanas 11 e 12**
 
@@ -128,11 +125,11 @@ Curso de capacitação EAD oferecido pelo Lab365 / SENAI-SC aos alunos seleciona
 <br>
 <br>
 
-**MÓDULO 3**
+**MÓDULO 3 - FULLSTACK**
 
 **Início**: 31/07/2023 | **Término**: 20/10/2023
-`<br>`
-`<br>`
+<br>
+<br>
 
 **Semana 01**
 
@@ -160,15 +157,15 @@ Curso de capacitação EAD oferecido pelo Lab365 / SENAI-SC aos alunos seleciona
 
 **Semana 07**
 
-* Overview Cloud, arquitetura em microserviços e CI/CD
+* *Overview* Cloud, arquitetura em microserviços e CI/CD
 
 **Semana 08**
 
-* Containers, Docker e visão geral de orquestrador (Kubernetes)
+* *Containers*, Docker e visão geral de orquestrador (Kubernetes)
 
 **Semana 09**
 
-* Deploy, Logging e Debug
+* *Deploy*, *Logging* e *Debug*
 
 **Semana 10, 11 e 12**
 

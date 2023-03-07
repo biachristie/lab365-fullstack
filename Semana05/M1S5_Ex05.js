@@ -2,7 +2,7 @@ function countVogals(word) {
     if (word === "") throw new Error("'word' is empty. Enter a valid value.");
     if (typeof word !== "string") throw new Error("'word' must be a string value.");
 
-    const vogals = ["a", "e", "i", "o", "u"];
+    const vogals = ["a", "á", "à", "â", "ã", "e", "é", "ê", "i", "í", "o", "ó", "ô", "õ", "u", "ú"];
     let numberVogals = 0;
     
     const array = word.toLocaleLowerCase().split("");

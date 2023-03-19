@@ -56,7 +56,8 @@ Curso de capacitação EAD oferecido pelo Lab365 / SENAI-SC aos alunos seleciona
 
 **Semana 06**
 
-* Estrutura de projeto Back-end, *design patterns*, rotas e verbos HTTP
+* Estrutura de projeto Back-end, *design patterns*, rotas e verbos HTTP ✔️
+* [Exercícios](https://github.com/biachristie/lab365-fullstack/tree/main/Semana06)
 
 **Semana 07**
 

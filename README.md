@@ -72,7 +72,7 @@ Curso de capacitação EAD oferecido pelo Lab365 / SENAI-SC aos alunos seleciona
 **Semana 09**
 
 * Async (introdução, *callback*, *event loop*, HTTP requests) e Middleware (RBAC e/ou JWT) ✔️
-* [Exercícios]()
+* [Exercícios](https://github.com/biachristie/lab365-fullstack/tree/main/Semana09)
 
 **Semana 10**
 

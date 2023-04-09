@@ -1,5 +1,5 @@
 const connection = require('../database');
-const Sequelize = require('sequelize');
+const { Sequelize } = require('sequelize');
 
 const Place = connection.define('place', {
     id: {

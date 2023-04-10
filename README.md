@@ -62,10 +62,12 @@ Curso de capacitação EAD oferecido pelo Lab365 / SENAI-SC aos alunos seleciona
 **Semana 07**
 
 * Introdução SQL, instalação e configuração do ambiente PostgreSQL, *overview* da ferramenta, comandos DDL (CREATE, ALTER, DROP) e apresentação do modelo relacional ✔️
+* [Exercícios](https://github.com/biachristie/lab365-fullstack/tree/main/Semana07)
 
 **Semana 08**
 
 * Modelo relacional, relacionamentos, comandos DML (INSERT, UPDATE, DELETE, SELECT), conexão e interação com JS (ORM Sequelize ou outro) ✔️
+* [Exercícios](https://github.com/biachristie/lab365-fullstack/tree/main/Semana08)
 
 **Semana 09**
 

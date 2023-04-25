@@ -81,7 +81,8 @@ Curso de capacitação EAD oferecido pelo Lab365 / SENAI-SC aos alunos seleciona
 
 **Semanas 11 e 12**
 
-* **Projeto 1 - Individual**: Organização - utilização do GitHub e Trello na construção do projeto
+* **Projeto 1 - Individual**: Organização - utilização do GitHub e Trello na construção do projeto ✔️
+* [Exercícios](https://github.com/biachristie/node-js-sante-api)
 
 <br>
 <br>

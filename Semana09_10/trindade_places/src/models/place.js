@@ -5,6 +5,7 @@ const Place = connection.define('place', {
     id: {
         type: Sequelize.INTEGER,
         autoIncrement: true,
+        unique: true,
         primaryKey: true
     },
     name: {

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/index.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <section class="section" id="sectionSignUp">
+            <div class="divTitulo">
+                <h1 id="titulo">Sign Up</h1>
+                <h6 id="subtitulo">Insira seus dados para criar uma conta</h6>
+            </div>
+            
+            <form action="" class="form" id="formSignUp">
+                <input type="text" name="empresa" placeholder="Empresa" class="formInput" id="inputEmpresa" required>
+                <input type="text" name="cnpj" placeholder="CNPJ" class="formInput" id="inputCnpj" required>
+                <input type="text" name="responsavel" placeholder="Responsável" class="formInput" id="inputResponsavel" required>
+                <div class="divForm">
+                    <input type="email" name="email" placeholder="E-mail" class="formInput" id="inputEmail" required>
+                    <input type="tel" name="telefone" placeholder="Telefone" class="formInput" id="inputTelefone" required>
+                </div>
+                <div class="divForm">
+                    <input type="password" name="senha" placeholder="Senha" class="formInput" id="inputSenha" required>
+                    <input type="password" name="confirmaSenha" placeholder="Confirmar senha" class="formInput" id="inputConfirmaSenha" required>
+                </div>
+                
+                <button type="submit" id="btnCriar">Criar Conta</button>
+            </form>
+        </section>
+        <section class="section" id="sectionLinks">
+            <span>Já possui uma conta? <a href="../signIn/index.html" id="linkSenha">Realizar login</a></span>
+        </section>
+    </div>
+    
+    <script src="./assets/scripts/index.js"></script>
+</body>
+</html>

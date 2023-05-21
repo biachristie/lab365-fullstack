@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--cor-fundo);
+}
+
+body {
+    height: 100vh;
+}
+
+:root {
+    --cor-fundo: #f0f0f0;
+    --cor-fundo-box: #ffffff;
+    --cor-link-ativo: #01802b;
+    --cor-link-inativo: #00a335;
+    --cor-borda-input: #ebf0fa;
+    --cor-texto-principal: #2c2c2c;
+    --cor-texto-secundario: #b4b6c1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sectionSignUp {
+    border-radius: 6px;
+    height: 29rem;
+    width: 20rem;
+    margin-bottom: 1.5rem;
+    background-color: var(--cor-fundo-box);
+}
+
+.divTitulo {
+    text-align: center;
+    margin-bottom: 2.2rem;
+    background-color: var(--cor-fundo-box);
+}
+
+#titulo {
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: var(--cor-fundo-box);
+    color: var(--cor-texto-principal);
+    margin-bottom: 0.6rem;
+}
+
+#subtitulo {
+    font-size: 0.75rem;
+    font-weight: 500;
+    background-color: var(--cor-fundo-box);
+    color: var(--cor-texto-secundario);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--cor-fundo-box);
+}
+
+.formInput {
+    height: 2rem;
+    width: 16.2rem;
+    background-color: var(--cor-fundo-box);
+    color: var(--cor-texto-secundario);
+    font-size: 0.7rem;
+    font-weight: 500;
+    border: 1px solid var(--cor-borda-input);
+    border-radius: 6px;
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.formInput:focus {
+    color: var(--cor-texto-principal);
+    border: 1px solid var(--cor-texto-principal);
+    outline: none;
+}
+
+.divForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--cor-fundo-box);
+}
+
+#inputEmail, #inputTelefone, #inputSenha, #inputConfirmaSenha {
+    width: 7.55rem;
+}
+
+#btnCriar {
+    height: 2.2rem;
+    background-color: var(--cor-link-inativo);
+    color: var(--cor-fundo-box);
+    font-weight: bold;
+    border-style: none;
+    border-radius: 6px;
+    margin-top: 1.4rem;
+    cursor: pointer;
+}
+
+#btnCriar:hover {
+    background-color: var(--cor-link-ativo);
+}
+
+#sectionLinks span {
+    font-size: 0.8rem;
+    color: var(--cor-texto-secundario);
+    padding-bottom: 1.5rem;
+}
+
+#sectionLinks a {
+    color: var(--cor-link-ativo);
+    text-decoration: none;
+}

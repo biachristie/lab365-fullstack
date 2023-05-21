@@ -32,52 +32,52 @@ Curso de capacitação EAD oferecido pelo Lab365 / SENAI-SC aos alunos seleciona
 * Introdução ao JS, variáveis e tipos de dados, operadores (aritméticos, lógicos e relacionais), *arrays*, listas e estrutura de controle de fluxo (condicional e repetição) ✔️
 * GitHub: importância, utilização, instalação e boas práticas ✔️
 * Trello: importância, utilização do Kanban, instalação e boas práticas ✔️
-* [Exercícios](https://github.com/biachristie/lab365-fullstack/tree/main/Semana01)
+* [Exercícios](https://github.com/biachristie/lab365-fullstack/tree/main/Modulo01/Semana01)
 
 **Semana 02**
 
 * Apresentação do ES6+, escopo (let, var e const), objetos, JSON, funções, *arrow functions*, *local storage*, interval e timeout ✔️
-* [Exercícios](https://github.com/biachristie/lab365-fullstack/tree/main/Semana02)
+* [Exercícios](https://github.com/biachristie/lab365-fullstack/tree/main/Modulo01/Semana02)
 
 **Semana 03**
 
 * Operadores Rest e Spread, módulos (export e import), funções de *arrays* (forEach, map, filter, find, reduce e every), funções assíncronas (promises, async e await) e fetch ✔️
-* [Exercícios](https://github.com/biachristie/lab365-fullstack/tree/main/Semana03)
+* [Exercícios](https://github.com/biachristie/lab365-fullstack/tree/main/Modulo01/Semana03)
 
 **Semana 04**
 
 * O que é POO, classes, atributos, encapsulamento (closure), herança e polimorfismo ✔️
-* [Exercícios](https://github.com/biachristie/lab365-fullstack/tree/main/Semana04)
+* [Exercícios](https://github.com/biachristie/lab365-fullstack/tree/main/Modulo01/Semana04)
 
 **Semana 05**
 
 * O que é uma API, conhecendo *frameworks* (Express.js e Next.js), configuração de ambiente Node, *package manager*, introdução ao Express.js (instalação, características, compilação e execução do primeiro projeto) e servindo arquivos estáticos ✔️
-* [Exercícios](https://github.com/biachristie/lab365-fullstack/tree/main/Semana05)
+* [Exercícios](https://github.com/biachristie/lab365-fullstack/tree/main/Modulo01/Semana05)
 
 **Semana 06**
 
 * Estrutura de projeto Back-end, *design patterns*, rotas e verbos HTTP ✔️
-* [Exercícios](https://github.com/biachristie/lab365-fullstack/tree/main/Semana06)
+* [Exercícios](https://github.com/biachristie/lab365-fullstack/tree/main/Modulo01/Semana06)
 
 **Semana 07**
 
 * Introdução SQL, instalação e configuração do ambiente PostgreSQL, *overview* da ferramenta, comandos DDL (CREATE, ALTER, DROP) e apresentação do modelo relacional ✔️
-* [Exercícios](https://github.com/biachristie/lab365-fullstack/tree/main/Semana07)
+* [Exercícios](https://github.com/biachristie/lab365-fullstack/tree/main/Modulo01/Semana07)
 
 **Semana 08**
 
 * Modelo relacional, relacionamentos, comandos DML (INSERT, UPDATE, DELETE, SELECT), conexão e interação com JS (ORM Sequelize ou outro) ✔️
-* [Exercícios](https://github.com/biachristie/lab365-fullstack/tree/main/Semana08)
+* [Exercícios](https://github.com/biachristie/lab365-fullstack/tree/main/Modulo01/Semana08)
 
 **Semana 09**
 
 * Async (introdução, *callback*, *event loop*, HTTP requests) e Middleware (RBAC e/ou JWT) ✔️
-* [Exercícios](https://github.com/biachristie/lab365-fullstack/tree/main/Semana09_10)
+* [Exercícios](https://github.com/biachristie/lab365-fullstack/tree/main/Modulo01/Semana09_10)
 
 **Semana 10**
 
 * *Rendering*, *requests* (form e cookies) e documentação com Swagger ✔️
-* [Exercícios](https://github.com/biachristie/lab365-fullstack/tree/main/Semana09_10)
+* [Exercícios](https://github.com/biachristie/lab365-fullstack/tree/main/Modulo01/Semana09_10)
 
 **Semanas 11 e 12**
 
@@ -95,16 +95,17 @@ Curso de capacitação EAD oferecido pelo Lab365 / SENAI-SC aos alunos seleciona
 
 **Semana 01**
 
-* Introdução à metodologias ágeis, Scrum (papéis, artefatos e rotinas), revisão de versionamento e GitHub com Squads e GitFlow
+* Introdução à metodologias ágeis, Scrum (papéis, artefatos e rotinas), revisão de versionamento e GitHub com Squads e GitFlow ✔️
 
 **Semana 02**
 
-* Design e Figma: importância da prototipagem e *hands-on* da ferramenta
-* Fundamentos: arquitetura cliente-servidor, introdução ao HTML e CSS
+* Design e Figma: importância da prototipagem e *hands-on* da ferramenta ✔️
+* Fundamentos: arquitetura cliente-servidor, introdução ao HTML e CSS ✔️
 
 **Semana 03**
 
-* HTML e CSS: HTML5 (elementos semânticos) e CSS (seletores, principais estilos, layouts e flexbox)
+* HTML e CSS: HTML5 (elementos semânticos) e CSS (seletores, principais estilos, layouts e flexbox) ✔️
+* [Exercícios](https://github.com/biachristie/lab365-fullstack/tree/main/Modulo02/Semana03)
 
 **Semana 04**
 

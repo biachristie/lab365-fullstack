@@ -1,0 +1,126 @@
+@import url(./cores.css);
+
+body {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: var(--cor-11);
+}
+
+h1 {
+    color: var(--cor-0);
+    margin-bottom: 32px;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+h6 {
+    font-size: 1.125rem;
+    color: var(--cor-5);
+}
+
+.header-bg {
+    background-color: var(--cor-12);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container {
+    box-sizing: border-box;
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    gap: 20px;
+}
+
+.header-menu li {
+    list-style-type: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.header-menu a {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: var(--cor-0);
+    padding: 16px 0px;
+}
+
+.header-menu a:hover::after {
+    transform: scaleX(1);
+}
+
+.header-menu a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: var(--cor-0);
+    margin-top: 4px;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: 0.3s ease-out;
+    position: absolute;
+}
+
+.main-bg {
+    background: var(--cor-12);
+    box-shadow: inset 0 -490px var(--cor-0);
+    height: 100vh;
+}
+
+.content {
+    align-self: end;
+}
+
+.pb-200 {
+    padding-bottom: 200px !important;
+}
+
+.text-yellow {
+    color: var(--cor-p1);
+}
+
+.btn-active {
+    display: inline-block;
+    background: linear-gradient(#ffbf00, #f2a50c);
+    color: var(--cor-p5);
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    max-width: max-content;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    padding: 16px 32px;
+    position: relative;
+}
+
+.btn-active:hover {
+    background: linear-gradient(#ffb60d, #e59317);
+}
+
+.img-banner {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}

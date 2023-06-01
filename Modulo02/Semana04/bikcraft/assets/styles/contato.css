@@ -82,7 +82,7 @@ h6 {
 
 .main-bg {
     background: var(--cor-12);
-    box-shadow: inset 0 -310px var(--cor-0);
+    box-shadow: inset 0 -490px var(--cor-1);
     height: 100vh;
 }
 
@@ -219,9 +219,134 @@ h6 {
     background: linear-gradient(#ffb60d, #e59317);
 }
 
-.img-banner {
-    max-width: 100%;
-    height: 100%;
-    object-fit: cover;
+.lojas {
+    background-color: var(--cor-1);
+    padding-top: 130px;
+    padding-bottom: 110px;
+}
+
+.titulo-lojas h1 {
+    color: var(--cor-11);
+    margin-bottom: 60px;
+}
+
+.loja-item {
     border-radius: 4px;
+    padding: 0;
+    column-gap: 40px;
+}
+
+#loja-item-esq {
+    padding-right: 20px;
+}
+
+#loja-item-dir {
+    padding-left: 20px;
+}
+
+.loja-item h3 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.loja-mapa img {
+    border-radius: 4px 4px 0 0;
+    max-width: 100%;
+}
+
+.loja-conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--cor-0);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 4px 4px;
+    row-gap: 32px;
+    padding: 32px;
+}
+
+.loja-dados {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.95rem;
+    gap: 20px;
+}
+
+.loja-dados div {
+    color: var(--cor-8);
+    border-left: 2px solid var(--cor-2);
+    padding-left: 12px;
+}
+
+.loja-dados-endereco p {
+    margin: 0;
+}
+
+.loja-dados-endereco, .loja-dados-contatos {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.loja-dados-contatos a {
+    color: var(--cor-8);
+    text-decoration: none;
+}
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-logo {
+    padding-left: 0;
+    width: 150px;
+    height: 32px;
+    display: block;
+}
+
+.footer-card {
+    margin-left: 20px;
+}
+
+.footer-card h3 {
+    color: var(--cor-0);
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 32px;
+    margin-left: 31px;
+}
+
+.footer-card li {
+    list-style-type: none;
+    color: var(--cor-5);
+    font-size: 18px;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.footer-card a {
+    color: var(--cor-5);
+    text-decoration: none;
+}
+
+.footer-redes {
+    margin-left: 31px;
+}
+
+.footer-redes a {
+    margin-right: 32px;
+}
+
+.footer-redes img {
+    margin-top: 30px;
+}
+
+.footer-copyright {
+    font-size: 1.025rem;
+    color: var(--cor-5);
+    padding-left: 20px;
+    margin-top: 40px;
+    margin-bottom: 60px;
 }

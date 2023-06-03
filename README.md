@@ -109,7 +109,8 @@ Curso de capacitação EAD oferecido pelo Lab365 / SENAI-SC aos alunos seleciona
 
 **Semana 04**
 
-* Revisão JS, eventos e manipulação de DOM (utilização de seletores)
+* Revisão JS, eventos e manipulação de DOM (utilização de seletores) ✔️
+* [Exercícios](https://github.com/biachristie/lab365-fullstack/tree/main/Modulo02/Semana04)
 
 **Semana 05 e 6**
 

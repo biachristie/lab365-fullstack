@@ -1,0 +1,11 @@
+body.light-theme {
+    background-color: var(--cor-0);
+}
+
+.light-theme h1 {
+    color: var(--cor-12);
+}
+
+.light-theme .main-bg {
+    background: var(--cor-0);
+}

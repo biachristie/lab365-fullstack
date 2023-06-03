@@ -14,7 +14,11 @@
         <header class="header-bg">
             <div class="header container">
                 <a href="./bikcraft.html"><img src="https://www.origamid.com/projetos/bikcraft/img/bikcraft.svg" alt="Bikcraft"/></a>
-                <nav aria-label="Main">
+                <nav class="nav-bar" aria-label="Main">
+                    <div class="form-check form-switch">
+                        <label class="form-check-label" type="checkbox">Alterar cor ativa</label>
+                        <input class="form-check-input" type="checkbox" role="switch" onclick="mudarCor()">
+                    </div>
                     <ul class="header-menu">
                         <li><a href="./bicicletas.html">Bicicletas</a></li>
                         <li><a href="#">Seguros</a></li>
@@ -174,5 +178,6 @@
 
         </main>
     
+        <script src="../scripts/corAtiva.js"></script>
     </body>
 </html>

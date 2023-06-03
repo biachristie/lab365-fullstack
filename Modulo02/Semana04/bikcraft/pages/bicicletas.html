@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-    <title>Contato | Bikcraft</title>
+    <title>Bicicletas | Bikcraft</title>
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -14,7 +14,11 @@
         <header class="header-bg">
             <div class="header container">
                 <a href="./bikcraft.html"><img src="https://www.origamid.com/projetos/bikcraft/img/bikcraft.svg" alt="Bikcraft"/></a>
-                <nav aria-label="Main">
+                <nav class="nav-bar" aria-label="Main">
+                    <div class="form-check form-switch">
+                        <label class="form-check-label" type="checkbox">Alterar cor ativa</label>
+                        <input class="form-check-input" type="checkbox" role="switch" onclick="mudarCor()">
+                    </div>
                     <ul class="header-menu">
                         <li><a href="./bicicletas.html">Bicicletas</a></li>
                         <li><a href="#">Seguros</a></li>
@@ -71,7 +75,7 @@
                 <section class="col-6">
                     <div class="bicicletas-imagem">
                         <img src="https://www.origamid.com/projetos/bikcraft/img/bicicletas/magic.jpg" alt="Bicicleta Magic Might">
-                        <span>R$ 4999</span>
+                        <span>R$ 2499</span>
                     </div>
                 </section>
                 <section class="col-6">
@@ -106,7 +110,7 @@
                 <section class="col-6">
                     <div class="bicicletas-imagem">
                         <img src="https://www.origamid.com/projetos/bikcraft/img/bicicletas/nebula.jpg" alt="Bicicleta Nebula Cosmic">
-                        <span>R$ 4999</span>
+                        <span>R$ 3999</span>
                     </div>
                 </section>
                 <section class="col-6">
@@ -174,7 +178,8 @@
                 <p class="footer-copyright">Bikcraft © Alguns direitos reservados</p>
             </footer>
         </main>
-    
+        
+        <script src="../scripts/corAtiva.js"></script>
         <script src="../scripts/bicicletas.js"></script>
     </body>
 </html>

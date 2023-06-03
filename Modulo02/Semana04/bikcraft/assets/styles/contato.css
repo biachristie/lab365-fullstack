@@ -41,6 +41,34 @@ h6 {
     margin-right: auto;
 }
 
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.form-check-label {
+    font-size: 0.8rem;
+    color: var(--cor-0);
+}
+
+.form-check-input {
+    height: 20px;
+    border: none;
+    background-color: #fb1;
+}
+
+.form-check-input:checked {
+    background-color: #06bc37;
+    border-color: #06bc37;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
+}
+
+.form-check-input:focus {
+    box-shadow: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
+}
+
 .header-menu {
     display: flex;
     flex-direction: row;
@@ -217,6 +245,14 @@ h6 {
 
 .btn-active:hover {
     background: linear-gradient(#ffb60d, #e59317);
+}
+
+.checked {
+    background: linear-gradient(#06bc37, #049b2c) !important;
+}
+
+.checked:hover {
+    background: linear-gradient(#05b434, #038325) !important;
 }
 
 .lojas {

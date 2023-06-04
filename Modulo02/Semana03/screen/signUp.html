@@ -11,28 +11,28 @@
     <div class="container">
         <section class="section" id="sectionSignUp">
             <div class="divTitulo">
-                <h1 id="titulo">Sign Up</h1>
-                <h6 id="subtitulo">Insira seus dados para criar uma conta</h6>
+                <h1 id="titulo" aria-label="Título">Sign Up</h1>
+                <h6 id="subtitulo" aria-label="Subtítulo">Insira seus dados para criar uma conta</h6>
             </div>
             
-            <form action="" class="form" id="formSignUp">
-                <input type="text" name="empresa" placeholder="Empresa" class="formInput" id="inputEmpresa" required>
-                <input type="text" name="cnpj" placeholder="CNPJ" class="formInput" id="inputCnpj" required>
-                <input type="text" name="responsavel" placeholder="Responsável" class="formInput" id="inputResponsavel" required>
+            <form action="" class="form" id="formSignUp" aria-label="Formulário para cadastro">
+                <input type="text" name="empresa" placeholder="Empresa" class="formInput" id="inputEmpresa" required aria-label="Campo para inserir nome da empresa">
+                <input type="text" name="cnpj" placeholder="CNPJ" class="formInput" id="inputCnpj" required aria-label="Campo para inserir cnpj da empresa">
+                <input type="text" name="responsavel" placeholder="Responsável" class="formInput" id="inputResponsavel" required aria-label="Campo para inserir nome do responsável">
                 <div class="divForm">
-                    <input type="email" name="email" placeholder="E-mail" class="formInput" id="inputEmail" required>
-                    <input type="tel" name="telefone" placeholder="Telefone" class="formInput" id="inputTelefone" required>
+                    <input type="email" name="email" placeholder="E-mail" class="formInput" id="inputEmail" required  aria-label="Campo para inserir e-mail">
+                    <input type="tel" name="telefone" placeholder="Telefone" class="formInput" id="inputTelefone" required aria-label="Campo para inserir número de telefone">
                 </div>
                 <div class="divForm" id="divFormSenha">
-                    <input type="password" name="senha" placeholder="Senha" class="formInput" id="inputSenha" required>
-                    <input type="password" name="confirmaSenha" placeholder="Confirmar senha" class="formInput" id="inputConfirmaSenha" required>
+                    <input type="password" name="senha" placeholder="Senha" class="formInput" id="inputSenha" required aria-label="Campo para inserir senha">
+                    <input type="password" name="confirmaSenha" placeholder="Confirmar senha" class="formInput" id="inputConfirmaSenha" required aria-label="Campo para inserir senha para confirmação">
                 </div>
                 
-                <button type="submit" id="btnCriar">Criar Conta</button>
+                <button type="submit" id="btnCriar" role="button" aria-label="Criar conta">Criar Conta</button>
             </form>
         </section>
         <section class="section" id="sectionLinks">
-            <span>Já possui uma conta? <a href="./signIn.html" id="linkSenha">Realizar login</a></span>
+            <span>Já possui uma conta? <a href="./signIn.html" id="linkSenha" aria-label="Link para página de log in">Realizar login</a></span>
         </section>
     </div>
 </body>

@@ -11,20 +11,20 @@
     <div class="container">
         <section class="section" id="sectionSignIn">
             <div class="divTitulo">
-                <h1 id="titulo">Sign In</h1>
-                <h6 id="subtitulo">Insira suas credenciais para acessar sua conta</h6>
+                <h1 id="titulo" aria-label="Título">Sign In</h1>
+                <h6 id="subtitulo" aria-label="Subtítulo">Insira suas credenciais para acessar sua conta</h6>
             </div>
             
-            <form action="" class="form" id="formSignIn">
-                <input type="email" name="email" placeholder="Informe seu e-mail" class="formInput" id="inputEmail" required>
-                <input type="password" name="password" placeholder="Informe sua senha" class="formInput" id="inputPassword" required>
+            <form action="" class="form" id="formSignIn" aria-label="Formulário para log in">
+                <input type="email" name="email" placeholder="Informe seu e-mail" class="formInput" id="inputEmail" required aria-label="Campo para inserir e-mail cadastrado">
+                <input type="password" name="password" placeholder="Informe sua senha" class="formInput" id="inputPassword" required aria-label="Campo para inserir senha cadastrada">
                 
-                <button type="submit" id="btnEntrar">Entrar</button>
+                <button type="submit" id="btnEntrar" role="button" aria-label="Entrar na conta">Entrar</button>
             </form>
         </section>
         <section class="section" id="sectionLinks">
-            <span>Esqueceu sua senha? <a href="" id="linkSenha">Redefinir senha</a></span>
-            <span>Ainda não tem uma conta? <a href="./signUp.html" id="linkCadastro">Cadastre-se</a></span>
+            <span>Esqueceu sua senha? <a href="" id="linkSenha" aria-label="Link para página de redefinição de senha">Redefinir senha</a></span>
+            <span>Ainda não tem uma conta? <a href="./signUp.html" id="linkCadastro" aria-label="Link para página de cadastro">Cadastre-se</a></span>
         </section>
     </div>
 </body>

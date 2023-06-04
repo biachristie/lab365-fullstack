@@ -114,3 +114,34 @@ body {
     color: var(--cor-link-ativo);
     text-decoration: none;
 }
+
+@media screen and (max-device-width: 450px) {
+    #sectionSignIn {
+        height: 20rem;
+        width: 20rem;
+    }
+
+    .divTitulo {
+        margin-bottom: 2.2rem;
+    }
+
+    #titulo {
+        font-size: 1.1rem;
+    }
+
+    #subtitulo {
+        font-size: 0.75rem;
+    }
+    
+    .formInput {
+        width: 16.2rem;
+    }
+    
+    #btnEntrar {
+        margin-top: 1.4rem;
+    }
+
+    #sectionLinks span {
+        font-size: 0.75rem;
+    }
+}

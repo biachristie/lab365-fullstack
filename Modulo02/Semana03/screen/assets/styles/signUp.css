@@ -126,3 +126,34 @@ body {
     color: var(--cor-link-ativo);
     text-decoration: none;
 }
+
+@media screen and (max-device-width: 450px) {
+    #sectionSignUp {
+        height: 29rem;
+        width: 20rem;
+    }
+
+    .divTitulo {
+        margin-bottom: 2.2rem;
+    }
+
+    #titulo {
+        font-size: 1.1rem;
+    }
+
+    #subtitulo {
+        font-size: 0.75rem;
+    }
+
+    .formInput {
+        width: 16.2rem;
+    }
+
+    #inputEmail, #inputTelefone, #inputSenha, #inputConfirmaSenha {
+        width: 7.55rem;
+    }
+    
+    #btnCriar {
+        margin-top: 1.4rem;
+    }
+}

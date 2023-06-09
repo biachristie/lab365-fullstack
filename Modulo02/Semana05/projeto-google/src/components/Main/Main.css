@@ -1,0 +1,71 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-logo {
+    height: auto;
+    width: 253px;
+    margin-bottom: 28px;
+}
+
+.main-search, .main-input, .main-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.main-search {
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    min-height: 44px;
+    width: auto;
+    max-width: 584px;
+    padding: 0 8px 0 14px;
+}
+
+.main-search:hover {
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    border-color: rgba(223, 225, 229, 0);
+}
+
+#main-mglass {
+    height: 15px;
+    filter: invert(64%) sepia(9%) saturate(203%) hue-rotate(169deg) brightness(97%) contrast(95%);
+    padding-right: 15px;
+}
+
+#main-input {
+    font-size: 14px;
+    color: #202124;
+    border: none;
+    line-height: 22px;
+    width: 399px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+
+.main-img {
+    gap: 20px
+}
+
+.main-img img {
+    height: 24px;
+}
+
+#main-keyboard {
+    filter: invert(64%) sepia(9%) saturate(203%) hue-rotate(169deg) brightness(97%) contrast(95%);
+    margin-left: 13px;
+}
+
+#main-camera {
+    margin-right: 10px;
+}
+
+.main-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+}

@@ -89,7 +89,7 @@ Curso de capacitação EAD oferecido pelo Lab365 / SENAI-SC aos alunos seleciona
 
 **MÓDULO 2 - FRONTEND**
 
-**Início**: 01/05/2023 | **Término**: 20/10/2023
+**Início**: 01/05/2023 | **Término**: 21/07/2023
 <br>
 <br>
 
@@ -101,6 +101,9 @@ Curso de capacitação EAD oferecido pelo Lab365 / SENAI-SC aos alunos seleciona
 
 * Design e Figma: importância da prototipagem e *hands-on* da ferramenta ✔️
 * Fundamentos: arquitetura cliente-servidor, introdução ao HTML e CSS ✔️
+* [Exercícios Figma](https://www.figma.com/file/ulwQazF6QqIYNEHJgTg7Ie/Exercicio?type=design&node-id=6%3A89&t=0DoKK8IX04qrIJkS-1)
+* [Exercícios Figma Tela Desktop](https://www.figma.com/proto/ulwQazF6QqIYNEHJgTg7Ie/Exercicio?page-id=6%3A89&type=design&node-id=6-92&viewport=382%2C-233%2C1&scaling=scale-down&starting-point-node-id=6%3A113)
+* [Exercícios Figma Tela Mobile](https://www.figma.com/proto/ulwQazF6QqIYNEHJgTg7Ie/Exercicio?page-id=6%3A158&type=design&node-id=6-165&viewport=1007%2C1130%2C1&scaling=scale-down&starting-point-node-id=6%3A165)
 
 **Semana 03**
 
@@ -112,9 +115,10 @@ Curso de capacitação EAD oferecido pelo Lab365 / SENAI-SC aos alunos seleciona
 * Revisão JS, eventos e manipulação de DOM (utilização de seletores) ✔️
 * [Exercícios](https://github.com/biachristie/lab365-fullstack/tree/main/Modulo02/Semana04)
 
-**Semana 05 e 6**
+**Semanas 05 e 06**
 
-* Introdução, renderização de componentes, *Props* e *Proptypes*
+* Introdução, renderização de componentes, *Props* e *Proptypes* ✔️
+* [Exercícios](https://github.com/biachristie/lab365-fullstack/tree/main/Modulo02/Semana05)
 
 **Semana 07**
 

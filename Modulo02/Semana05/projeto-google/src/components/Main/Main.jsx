@@ -17,8 +17,12 @@ function Main() {
                     <input type='text' id='main-input' />
                 </div>
                 <div className='main-img'>
-                    <img src={keyboard} alt='Imagem de teclado' id='main-keyboard' />
-                    <img src={lens} alt='Imagem de câmera' id='main-camera' />
+                    <a href="#">
+                        <img src={keyboard} alt='Imagem de teclado' id='main-keyboard' />
+                    </a>
+                    <a href="#">
+                        <img src={lens} alt='Imagem de câmera' id='main-camera' />
+                    </a>
                 </div>
             </div>
             <div className='main-buttons'>

@@ -6,7 +6,7 @@ import './Button.css'
 function Button({ text }) {
     return(
         <React.Fragment>
-            <button className='navbar-button' aria-label={ text } role='button'>{ text }</button>
+            <button className='button' aria-label={ text } role='button'>{ text }</button>
         </React.Fragment>
     )
 }

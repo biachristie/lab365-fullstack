@@ -1,0 +1,17 @@
+.banner {
+    color: var(--color-mint);
+    background-color: var(--color-light-wewak);
+    padding: 40px;
+}
+
+#banner-subtitle {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-left: 2px;
+}
+
+#banner-title {
+    font-size: 3rem;
+    letter-spacing: -3px;
+}

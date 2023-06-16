@@ -119,6 +119,7 @@ Curso de capacitação EAD oferecido pelo Lab365 / SENAI-SC aos alunos seleciona
 
 * Introdução, renderização de componentes, *Props* e *Proptypes* ✔️
 * [Exercícios](https://github.com/biachristie/lab365-fullstack/tree/main/Modulo02/Semana05)
+* [Exercícios](https://github.com/biachristie/lab365-fullstack/tree/main/Modulo02/Semana06)
 
 **Semana 07**
 

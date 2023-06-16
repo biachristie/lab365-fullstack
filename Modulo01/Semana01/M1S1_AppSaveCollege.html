@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App SaveCollege</title>
+</head>
+<body>
+    <script>
+    // --------------------------------------------------------------------------------------------
+    // Exercício 01
+
+        var student = [
+            {
+                "name": "Ariana Grande-Butera",
+                "height": 1.53,
+                "age": 29,
+                "sex": "F",
+                "classroom": 301,
+                "mathematics": 9.1
+            },
+            {
+                "name": "Peter Gene Hernandez",
+                "height": 1.65,
+                "age": 37,
+                "sex": "M",
+                "classroom": 301,
+                "mathematics": 8.6
+            },
+            {
+                "name": "Karla Camila Cabello Estrabao",
+                "height": 1.57,
+                "age": 25,
+                "sex": "F",
+                "classroom": 301,
+                "mathematics": 4.2
+            },
+            {
+                "name": "Damien George Rice",
+                "height": 1.68,
+                "age": 49,
+                "sex": "M",
+                "classroom": 301,
+                "mathematics": 7.5
+            },
+            {
+                "name": "Marshall Bruce Mathers III",
+                "height": 1.73,
+                "age": 50,
+                "sex": "M",
+                "classroom": 301,
+                "mathematics": 1.8
+            }
+        ]
+        
+        console.log(student);
+        console.log(student[1]);
+        console.log(`O estudante ${student[3].name} estuda na sala ${student[3].classroom}.`);
+
+    // --------------------------------------------------------------------------------------------
+    // Exercício 02
+
+        var sumGradeStudents = student[0].mathematics + student[1].mathematics + student[2].mathematics + student[3].mathematics + student[4].mathematics
+        var meanGradeStudents = sumGradeStudents/student.length
+
+        console.log(`A média dos alunos é ${meanGradeStudents.toFixed(2)}.`);
+
+    // --------------------------------------------------------------------------------------------
+    // Exercício 03
+
+    function calculateMeanGrade(studentId, subject) {
+        if(student[studentId]["subject"] >= 7) {
+            console.log(`${student[studentId].name}: aprovado(a).`);
+        } else {
+            console.log(`${student[studentId].name}: reprovado(a).`);
+        }
+    }
+
+    calculateMeanGrade (0, "mathematics");
+    calculateMeanGrade (1, "mathematics");
+    calculateMeanGrade (2, "mathematics");
+    calculateMeanGrade (3, "mathematics");
+    calculateMeanGrade (4, "mathematics");
+
+    // --------------------------------------------------------------------------------------------
+    // Exercício 05
+
+    let sumGradeStudents2 = 0;
+
+    for (let i = 0; i < student.length; i++) {
+        sumGradeStudents2 += student[i].mathematics;
+    }
+    
+    var meanGradeStudents2 = sumGradeStudents2/student.length;
+    console.log(`A média dos alunos é ${meanGradeStudents2.toFixed(2)}.`);
+
+    for (let i = 0; i < student.length; i++) {        
+        calculateMeanGrade([i], "mathematics");
+    }
+
+    </script>
+</body>
+</html>

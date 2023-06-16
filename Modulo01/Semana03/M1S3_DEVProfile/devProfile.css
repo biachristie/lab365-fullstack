@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    width: 40rem;
+    margin: 5rem auto 0;
+    background-color: #083753;
+    border-radius: 1rem;
+    box-shadow: -1px 15px 30px -12px #000;
+}
+
+.basicInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    margin-left: 1.5rem;
+}
+
+.basicInfo__avatar > img {
+    height: 7rem;
+    border-radius: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.basicInfo__description {
+    text-align: center;
+}
+
+.basicInfo__sns {
+    margin-top: 0.7rem;
+}
+
+.additionalInfo {
+    width: 50%;
+    color: #fafafa;
+    padding-right: 1.5rem;
+    margin-left: 2rem;
+}
+
+.additionInfo__email, .additionalInfo__location, .additionalInfo__education, .additionalInfo__education > div {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+i[class*="fa-solid"] {
+    color: #f97b67;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+}
+
+i[class*="fa-brands"] {
+    color: #f97b67;
+    margin-right: 0.5rem;
+    font-size: 1.8rem;
+}
+
+#name {
+    color: #fafafa;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+#description {
+    font-style: italic;
+    font-size: 0.85rem;
+    color: #fafafa;
+}
+
+#college {
+    padding-left: 1.9rem;
+    font-weight: 600;
+}
+
+#techSchool {
+    padding-left: 1.95rem;
+    font-weight: 600;
+}

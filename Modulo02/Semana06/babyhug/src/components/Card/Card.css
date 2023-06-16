@@ -1,0 +1,76 @@
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: var(--color-porcelain);
+    padding: 30px 40px;
+}
+
+.card-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    position: relative;
+}
+
+.card-img > img {
+    height: auto;
+    width: 500px;
+    border-radius: 10px;
+}
+
+.card-img > span {
+    position: absolute;
+    right: 0px;
+    color: var(--color-snow);
+    background-color: var(--color-porcelain);
+    width: max-content;
+    border-radius: 4px 0 0 4px;
+    padding: 10px 10px 6px;
+    margin-top: 20px;
+}
+
+.card-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left:30px;
+}
+
+.card-product-description > p {
+    font-weight: 400;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.card-product-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card-product-list li::before {
+    content: '●';
+    color: var(--color-mint);
+    font-size: 25px;
+    line-height: 20px;
+    padding-right: 10px;
+}
+
+.card-product-list > button {
+    place-self: end;
+    color: var(--color-snow);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: var(--color-mint);
+    border: none;
+    border-radius: 10px;
+    padding: 13px 20px 11px;
+    cursor: pointer;
+}
+
+.card-product-list > button:hover {
+    background-color: var(--color-mint-dark);
+}

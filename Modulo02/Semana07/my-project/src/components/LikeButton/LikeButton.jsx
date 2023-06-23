@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function Button() {
+function LikeButton() {
     const [count, setCount] = useState(0)
 
     const addLike = () => setCount((count) => count + 1)
@@ -15,4 +15,4 @@ function Button() {
     );
 }
 
-export default Button;
+export default LikeButton;

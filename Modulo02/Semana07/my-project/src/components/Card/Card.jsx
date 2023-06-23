@@ -1,3 +1,4 @@
+import EditButton from "../EditButton/EditButton";
 import LikeButton from "../LikeButton/LikeButton";
 
 function Card({ users }) {
@@ -10,6 +11,9 @@ function Card({ users }) {
                     </ul>
                     <div className="card-likebtn">
                         { <LikeButton /> }
+                    </div>
+                    <div className="card-editbtn">
+                        { <EditButton /> }
                     </div>
                 </div>
     }

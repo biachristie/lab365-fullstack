@@ -1,76 +1,82 @@
 import React, { useState } from 'react'
 
-function Form() {
-    let [users, setUsers] = useState([])
-    let user = {}
+function Form({ setUsers }) {
+    const [user, setUser] = useState({
+        nickname: '',
+        age: '',
+        email: '',
+        password: ''
+    })    
 
-    const [nickname, setNickname] = useState('')
-    const [age, setAge] = useState('')
-    const [email, setEmail] = useState('')
-    const [password, setPassword] = useState('')
+    const handleInput = (e) => {
+        e.preventDefault()
+    
+        setUser(prevUser => ({ ...prevUser, [e.target.id]: e.target.value }))
+    }
 
-    const saveUser = (e) => {
+    const isFormValid = () => {
+        let validate = true
+        const data = Object.entries(user);
+
+        data.forEach(([key]) => {
+            if (!user[key].length) {
+                validate = false;
+            }
+        })
+    }
+
+    const handleSubmit = (e) => {
         e.preventDefault()
 
-        nickname ? user.nickname = nickname : alert('Nickname can not be empty')
-        age ? user.age = age : alert('Age can not be empty')
-        email ? user.email = email : alert('E-mail can not be empty')
-        password ? user.password = password : alert('Password can not be empty')
-
-        if (!nickname || !age || !email || !password) {
-            return
-        } else {
-            addUser()
-        }
-    }
-    
-    const addUser = () => {
-        if (user) {
-            setUsers(users => [...users, user])
-        }
-        console.log(user);
+        isFormValid  
+            ? setUsers(prevUsers => [...prevUsers, user])
+            : alert(`Verify input values`)
     }
 
     return ( 
         <React.Fragment>
-            <form action="" id='signupForm'>
+            <form action="" id='signupForm' onSubmit={ handleSubmit }>
                 <div>
                     <label htmlFor="nickname">Nickname
                         <input 
                             type="text" 
-                            value={ nickname } 
+                            id= "nickname" 
                             placeholder='Enter your nickname' 
-                            onChange={ (e) => setNickname(e.target.value) } />
+                            onInput={ handleInput }
+                            required />
                     </label>
                 </div>
                 <div>
                     <label htmlFor="age">Age
                         <input 
                             type="number" 
-                            value={ age } 
+                            id= "age" 
                             placeholder='Enter your age'
-                            onChange={ (e) => setAge(e.target.value) } />
+                            onInput={ handleInput }
+                            required />
                     </label>
                 </div>
                 <div>
                     <label htmlFor="email">E-mail
                         <input 
                             type="email" 
-                            value={ email } 
+                            id= "email"
                             placeholder='Enter your e-mail' 
-                            onChange={ (e) => setEmail(e.target.value) } />
+                            onInput={ handleInput }
+                            required />
                     </label>
                 </div>
                 <div>
                     <label htmlFor="password">Password
                         <input 
                             type="password"
-                            value={ password } 
+                            id= "password"
                             placeholder='Enter your password'
-                            onChange={ (e) => setPassword(e.target.value) } />
+                            onInput={ handleInput }
+                            required />
                     </label>
                 </div>
-                <button type="submit" onClick={ saveUser }>Subscribe</button>
+                <button type="submit" >Subscribe</button>
             </form>
         </React.Fragment>
     )

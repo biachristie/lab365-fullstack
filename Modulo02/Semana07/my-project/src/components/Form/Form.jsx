@@ -12,19 +12,23 @@ function Form() {
     const saveUser = (e) => {
         e.preventDefault()
 
-        user.nickname = nickname
-        user.age = age
-        user.email = email
-        user.password = password
+        nickname ? user.nickname = nickname : alert('Nickname can not be empty')
+        age ? user.age = age : alert('Age can not be empty')
+        email ? user.email = email : alert('E-mail can not be empty')
+        password ? user.password = password : alert('Password can not be empty')
 
-        addUser()
+        if (!nickname || !age || !email || !password) {
+            return
+        } else {
+            addUser()
+        }
     }
     
     const addUser = () => {
         if (user) {
             setUsers(users => [...users, user])
         }
-        console.log(users);
+        console.log(user);
     }
 
     return ( 

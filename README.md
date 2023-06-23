@@ -123,11 +123,12 @@ Curso de capacitação EAD oferecido pelo Lab365 / SENAI-SC aos alunos seleciona
 
 **Semana 07**
 
-* *Hooks* principais (useState, useEffect e useRef), eventos e renderização de listas
+* *Hooks* principais (useState, useEffect e useRef), eventos e renderização de listas ✔️
+* [Exercícios](https://github.com/biachristie/lab365-fullstack/tree/main/Modulo02/Semana07)
 
 **Semana 08**
 
-* *Hooks* avançados (useReducer e useContext), React Router e formulários
+* *Hooks* avançados (useReducer e useContext), React Router e formulários ✔️
 
 **Semana 09**
 

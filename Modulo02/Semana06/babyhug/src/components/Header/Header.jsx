@@ -1,4 +1,5 @@
 import { Fragment } from 'react'
+import { Link } from "react-router-dom";
 
 import './Header.css'
 import logo from '../../assets/yarn-ball.jpg'
@@ -8,12 +9,12 @@ function Header({ title }) {
         {
             id: 0,
             label: 'produtos',
-            path: '#',
+            path: '/product',
         },
         {
             id: 1,
             label: 'contato',
-            path: '#',
+            path: '/contact',
         },
     ]
     
@@ -21,7 +22,7 @@ function Header({ title }) {
         return (
             <Fragment key={ menuItem.id }>
                 <li className="nav-item">
-                    <a className="nav-link" href={ menuItem.path }>{ menuItem.label }</a>
+                    <Link className="nav-link" to={ menuItem.path }>{ menuItem.label }</Link>
                 </li>
             </Fragment>
         )
@@ -31,7 +32,7 @@ function Header({ title }) {
         <nav className="navbar">
             <div className="navbar-brand">
                 <img src={ logo } alt="PetCraft Logo" id="navbar-logo" />
-                <a href="#" id="navbar-title">{ title }</a>
+                <Link to="/" id="navbar-title">{ title }</Link>
             </div>
             <div className="navbar-nav">
                 <ul className="nav-list">

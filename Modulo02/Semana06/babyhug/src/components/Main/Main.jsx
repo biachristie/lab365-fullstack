@@ -1,12 +1,11 @@
 import React from 'react';
 
-import Card from '../Card/Card'
+import './Main.css'
 
 function Main() {
     return(
-        <React.Fragment>
-            <Card />
-        </React.Fragment>
+        <div className='main-container'>
+        </div>
     )
 }
 

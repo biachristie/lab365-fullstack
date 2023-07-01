@@ -1,5 +1,7 @@
 import { useState } from "react"
 
+import "./Search.css"
+
 function Search({ users }) {
     const [inputData, setInputData] = useState('')
     let result = document.querySelector('#search-result')
@@ -25,16 +27,16 @@ function Search({ users }) {
     }
 
     return (
-        <div className="search-container">
-            <label htmlFor="search"></label>
-            <input 
-                type="text" 
-                id= "search" 
-                placeholder=""
-                onInput={ handleInput } />
-            <button onClick={ searchUser }>Search</button>
+        <section className="search-container">
+            <div className="search-bar">
+                <input 
+                    type="text" 
+                    id="search-input" 
+                    onInput={ handleInput } />
+                <button id="search-btn" onClick={ searchUser }>Search</button>
+            </div>
             <div id="search-result"></div>
-        </div>
+        </section>
     );
 }
 

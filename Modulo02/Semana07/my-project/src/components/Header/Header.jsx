@@ -1,22 +1,22 @@
 import { useState } from "react"
 
-function Header() {
-    const [name, setName] = useState("Hello!")
+import "./Header.css"
 
-    function changeName() {
+function Header() {
+    const [name, setName] = useState("Hello! Click here.")
+
+    const changeName = () => {
         let newName = prompt("What is your name?")
         
-        if (newName) {
-            setName(`Hello, ${ newName }!`)
-        }
+        newName ? setName(`Hello, ${ newName }!`) : { name }
     }
 
     return (
-        <div>
-            <nav>
+        <header>
+            <nav className="navbar">
                 <a href="#" onClick={ changeName }>{ name }</a>
             </nav>
-        </div>
+        </header>
     );
 }
 

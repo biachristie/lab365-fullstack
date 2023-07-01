@@ -5,6 +5,8 @@ import Form from "./components/Form/Form"
 import Card from "./components/Card/Card"
 import Search from './components/Search/Search'
 
+import "./App.css"
+
 function App() {
   const [users, setUsers] = useState([])
 

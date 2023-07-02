@@ -2,7 +2,7 @@ import Header from '../../components/Header/Header'
 import Main from '../../components/Main/Main'
 import Footer from '../../components/Footer/Footer'
 
-export const HomePage = () => {
+function HomePage() {
     return (
         <div className='container'>
             <Header title='BabyHug' />
@@ -11,3 +11,5 @@ export const HomePage = () => {
         </div>
     )
 }
+
+export default HomePage

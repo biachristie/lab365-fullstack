@@ -44,7 +44,7 @@ function Footer() {
                         <h2>contato</h2>
                     </div>
                     <div className='contact-contact'>
-                        <span>+55 31 9999-9999</span>
+                        <span>+55 21 9999-9999</span>
                         <span>contato@suaempresa.com</span>
                     </div>
                     <div className='contact-address'>

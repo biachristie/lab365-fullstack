@@ -3,7 +3,7 @@ import Banner from '../../components/Banner/Banner'
 import Card from '../../components/Card/Card'
 import Footer from '../../components/Footer/Footer'
 
-export const ProductPage = () => {
+function ProductPage() {
     return (
         <div className='container'>
             <Header title='BabyHug' />
@@ -15,3 +15,5 @@ export const ProductPage = () => {
         </div>
     )
 }
+
+export default ProductPage

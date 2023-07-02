@@ -4,7 +4,7 @@ import ContactForm from '../../components/ContactForm/ContactForm'
 import ContactCard from '../../components/ContactCard/ContactCard'
 import Footer from '../../components/Footer/Footer'
 
-export const ContactPage = () => {
+function ContactPage() {
     return (
         <div className='container'>
             <Header title='BabyHug' />
@@ -15,3 +15,5 @@ export const ContactPage = () => {
         </div>
     )
 }
+
+export default ContactPage

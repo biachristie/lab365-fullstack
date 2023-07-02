@@ -1,0 +1,43 @@
+.contactCard-container {
+    color: var(--color-porcelain);
+}
+
+.contactCard-title {
+    margin: 50px 20px 20px;
+}
+
+.contactCard-info {
+    background: var(--color-white);
+    border-radius: 20px;
+    padding-bottom: 30px;
+    margin: 16px;
+    box-shadow: 0 4px 4px rgb(0, 0, 0, 0.25);
+}
+
+.contactCard-info > iframe {
+    width: 100%; 
+    height: 230px;
+    border: none;
+    border-radius: 20px 20px 0 0;
+}
+
+.contactCard-info > span, .contactCard-subtitle {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.contactCard-info-address {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+}
+
+.contactCard-info-address > div {
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid #dbdbdb;
+    padding: 10px 15px;
+    margin: 10px 20px 20px 20px;
+    width: 50%;
+}

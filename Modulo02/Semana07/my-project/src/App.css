@@ -6,3 +6,23 @@ a {
     color: #d6e4e5;
     text-decoration: none;
 }
+
+button {
+    color: #fff;
+    background: #eb6440;
+    border: none;
+    border-radius: 5px;
+    height: 30.4px;
+    padding: 0 10px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+li {
+    padding-bottom: 10px;
+}

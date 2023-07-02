@@ -1,0 +1,18 @@
+.cards-container, .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    width: 500px;
+    border-bottom: 1px solid #535353;
+    padding: 20px 0;
+}
+
+.card-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 30%;
+}

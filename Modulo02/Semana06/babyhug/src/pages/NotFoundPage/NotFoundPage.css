@@ -1,0 +1,20 @@
+.notfound-msg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.notfound-msg > div {
+    width: 50%;
+}
+
+.notfound-msg-text {
+    color: var(--color-porcelain);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.notfound-msg-img > img {
+    height: 500px;
+}

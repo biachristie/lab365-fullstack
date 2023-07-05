@@ -16,6 +16,11 @@ function Header({ title }) {
             label: 'contato',
             path: '/contact',
         },
+        {
+            id: 2,
+            label: 'faq',
+            path: '/faq',
+        },
     ]
     
     const renderMenuItem = (menuItem) => {

@@ -1,8 +1,13 @@
+import { useContext } from 'react';
 import PropTypes from 'prop-types'
+
+import { BannerContext } from '../../contexts/BannerContext'
 
 import './Banner.css'
 
-function Banner({ title, subtitle }) {
+function Banner() {
+    const { title, subtitle } = useContext(BannerContext)
+
     return(
         <div className="banner">
             <span id='banner-subtitle'>{ subtitle }</span>

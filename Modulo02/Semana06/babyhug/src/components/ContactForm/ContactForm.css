@@ -10,10 +10,11 @@
     color: var(--color-porcelain);
 }
 
-.contactForm-form input, #input-msg {
+.contactForm-form input, #message {
     color: #5a5a5a;
     border: 1px solid #dbdbdb;
     border-radius: 7px;
+    outline: none;
 }
 
 .contactForm-form > div {
@@ -47,18 +48,26 @@
 .contactForm-field {
     display: grid;
     border: none;
+    width: 100%;
 }
 
 .contactForm-label {
     margin: 10px 0;
 }
 
-#input-name, #input-tel, #input-email {
+#name, #telephone, #email {
     text-indent: 10px;
     height: 35px;
 }
 
-#input-msg {
+#message {
     font-size: 0.85rem;
     padding: 13px 10px;
+}
+
+#character-counter > span {
+    font-size: 0.85rem;
+    text-align: right;
+    padding-top: 10px;
+    width: 100%;
 }

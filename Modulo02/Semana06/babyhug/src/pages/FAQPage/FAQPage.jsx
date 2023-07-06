@@ -6,6 +6,7 @@ import Header from '../../components/Header/Header'
 import Banner from '../../components/Banner/Banner'
 import Footer from '../../components/Footer/Footer'
 import Questions from '../../components/Questions/Questions';
+import Search from '../../components/Search/Search.jsx';
 
 function FAQPage() {
     const data = {
@@ -24,8 +25,8 @@ function FAQPage() {
         <div className='container'>
             <Header title='BabyHug' />
             <Banner title={ title } subtitle={ subtitle } />
+            <Search />
             <Questions />
-            
             <Footer />
         </div>
     )

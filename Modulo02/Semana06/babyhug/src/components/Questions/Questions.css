@@ -1,0 +1,32 @@
+details > summary > * {
+    display: inline;
+}
+
+summary::marker, .question-title > p {
+    color: #5a5a5a;
+}
+
+.questions-container {
+    margin: 30px 10px;
+}
+
+.question {
+    margin: 15px;
+}
+
+.question-title {
+    font-size: 1.025rem;
+    background-color: var(--color-mint-light);
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: default;
+}
+
+.question-answer {
+    font-size: 0.95rem;
+    text-align: justify;
+    color: var(--color-porcelain);
+    border: 2px solid var(--color-mint-light);
+    margin-top: 0;
+    padding: 16px;
+}

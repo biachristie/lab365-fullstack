@@ -1,19 +1,24 @@
 import { createContext, useState } from "react";
+import PropTypes from 'prop-types'
 
 export const BannerContext = createContext({
-    title:'',
-    setTitle: () => {},
-    subtitle: '',
-    setSubtitle: () => {}
+    banner: {
+        title:'',
+        subtitle: ''
+    },
+    setBanner: () => {}
 })
 
-export const BannerProvider = (props) => {
-    const [title, setTitle] = useState('')
-    const [subtitle, setSubtitle] = useState('')
+export const BannerProvider = ({ children }) => {
+    const [banner, setBanner] = useState('')
 
     return(
-        <BannerContext.Provider value={ { title, setTitle, subtitle, setSubtitle } }>
-            { props.children }
+        <BannerContext.Provider value={ { banner, setBanner } }>
+            { children }
         </BannerContext.Provider>
     )
+}
+
+BannerProvider.propTypes = {
+    children: PropTypes.node.isRequired
 }

@@ -10,22 +10,19 @@ import ContactCard from '../../components/ContactCard/ContactCard'
 import Footer from '../../components/Footer/Footer'
 
 function ContactPage() {
-    const data = {
+    const { setBanner } = useContext(BannerContext)
+
+    useEffect(() => {
+        setBanner({
             title: 'contato',
             subtitle: 'entre em contato conosco'
-        }
-
-        const { title, setTitle, subtitle, setSubtitle } = useContext(BannerContext)
-
-        useEffect(() => {
-            setTitle(data.title)
-            setSubtitle(data.subtitle)
-        }, [])
+        })
+    }, [])
 
     return (
         <div className='container'>
             <Header title='BabyHug' />
-            <Banner title={ title } subtitle={ subtitle } />
+            <Banner />
             <UserProvider>
                 <ContactForm />
             </UserProvider>

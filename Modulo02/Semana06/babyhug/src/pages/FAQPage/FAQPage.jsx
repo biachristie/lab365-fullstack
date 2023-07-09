@@ -9,22 +9,19 @@ import Questions from '../../components/Questions/Questions';
 import Search from '../../components/Search/Search.jsx';
 
 function FAQPage() {
-    const data = {
+    const { setBanner } = useContext(BannerContext)
+
+    useEffect(() => {
+        setBanner({
             title: 'perguntas frequentes',
             subtitle: 'dúvidas frequentes'
-        }
-
-        const { title, setTitle, subtitle, setSubtitle } = useContext(BannerContext)
-
-        useEffect(() => {
-            setTitle(data.title)
-            setSubtitle(data.subtitle)
-        }, [])
+        })
+    }, [])
 
     return (
         <div className='container'>
             <Header title='BabyHug' />
-            <Banner title={ title } subtitle={ subtitle } />
+            <Banner />
             <Search />
             <Questions />
             <Footer />

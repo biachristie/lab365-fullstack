@@ -6,19 +6,19 @@ import { BannerContext } from '../../contexts/BannerContext'
 import './Banner.css'
 
 function Banner() {
-    const { title, subtitle } = useContext(BannerContext)
+    const { banner } = useContext(BannerContext)
 
     return(
         <div className="banner">
-            <span id='banner-subtitle'>{ subtitle }</span>
-            <h1 id='banner-title'>{ title }</h1>
+            <span id='banner-subtitle'>{ banner.subtitle }</span>
+            <h1 id='banner-title'>{ banner.title }</h1>
         </div>
     )
 }
 
 Banner.propTypes = {
-    title: PropTypes.string.isRequired,
-    subtitle: PropTypes.string.isRequired
+    title: PropTypes.string,
+    subtitle: PropTypes.string
 }
 
 export default Banner

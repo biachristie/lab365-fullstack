@@ -17,7 +17,7 @@ function ContactCard() {
                         <span>+55 21 9999-9999</span>
                     </div>
                 </div>
-                <span>Aberta de 08h às 18s, de segunda à sexta</span>
+                <span>Aberta de 08hs às 18hs, de segunda à sexta</span>
             </div>
         </div>
     );

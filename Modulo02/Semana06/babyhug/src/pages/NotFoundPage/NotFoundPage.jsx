@@ -10,22 +10,19 @@ import error from '../../assets/404error.svg'
 import './NotFoundPage.css'
 
 function NotFoundPage() {
-    const data = {
-        title: 'ops!',
-        subtitle: 'não encontramos essa página'
-    }
-
-    const { title, setTitle, subtitle, setSubtitle } = useContext(BannerContext)
+    const { setBanner } = useContext(BannerContext)
 
     useEffect(() => {
-        setTitle(data.title)
-        setSubtitle(data.subtitle)
+        setBanner({
+            title: 'ops!',
+            subtitle: 'não encontramos essa página'
+        })
     }, [])
 
     return (
         <div className='notfound-container'>
             <Header title='BabyHug' />
-            <Banner title={ title } subtitle={ subtitle } />
+            <Banner />
             <div className='notfound-msg'>
                 <div className='notfound-msg-text'>
                     <span>Página não encontrada</span>

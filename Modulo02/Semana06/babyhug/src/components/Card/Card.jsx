@@ -1,40 +1,58 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useContext } from 'react'
 import PropTypes from 'prop-types'
 
 import './Card.css'
-import photo from '../../assets/photo.jpg'
+
+import { ProductModalContext } from '../../contexts/ProductModalContext'
 
 function Card() {
     const cards = [
         {
             id: 0,
-            photo: '../../assets/photo.jpg',
+            photo: '../../../public/photo.jpg',
             photoDescription: 'DESCRIÇÃO DA FOTO',
             price: 'PREÇO',
-            productName: 'PRODUTO',
+            productName: 'PRODUTO1',
             productDescription: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, modi facilis nemo aperiam nobis porro asperiores fuga obcaecati atque sed id ratione perspiciatis quidem exercitationem, aspernatur odio sapiente illum corporis.',
-            productList: ['LISTA', 'LISTA', 'LISTA', 'LISTA']
+            productInfoList: ['LISTA', 'LISTA', 'LISTA', 'LISTA'],
+            productSpecList: ['LISTA', 'LISTA', 'LISTA', 'LISTA']
         },
         {
             id: 1,
-            photo: '../../assets/photo.jpg',
+            photo: '../../../public/photo.jpg',
             photoDescription: 'DESCRIÇÃO DA FOTO',
             price: 'PREÇO',
-            productName: 'PRODUTO',
+            productName: 'PRODUTO2',
             productDescription: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, modi facilis nemo aperiam nobis porro asperiores fuga obcaecati atque sed id ratione perspiciatis quidem exercitationem, aspernatur odio sapiente illum corporis.',
-            productList: ['LISTA', 'LISTA', 'LISTA', 'LISTA']
-        },
+            productInfoList: ['LISTA', 'LISTA', 'LISTA', 'LISTA'],
+            productSpecList: ['LISTA', 'LISTA', 'LISTA', 'LISTA']        },
         {
             id: 2,
-            photo: '../../assets/photo.jpg',
+            photo: '../../../public/photo.jpg',
             photoDescription: 'DESCRIÇÃO DA FOTO',
             price: 'PREÇO',
-            productName: 'PRODUTO',
+            productName: 'PRODUTO3',
             productDescription: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, modi facilis nemo aperiam nobis porro asperiores fuga obcaecati atque sed id ratione perspiciatis quidem exercitationem, aspernatur odio sapiente illum corporis.',
-            productList: ['LISTA', 'LISTA', 'LISTA', 'LISTA']
+            productInfoList: ['LISTA', 'LISTA', 'LISTA', 'LISTA'],
+            productSpecList: ['LISTA', 'LISTA', 'LISTA', 'LISTA']
         },
     ]
 
+    const { setShow, setData } = useContext(ProductModalContext)
+
+    const handleShowModal = (cardItem) => {
+        setShow(true)
+        setData({
+            photo: cardItem.photo,
+            photoDescription: cardItem.photoDescription,
+            price: cardItem.price,
+            productName: cardItem.productName,
+            productDescription: cardItem.productDescription,
+            productInfoList: cardItem.productInfoList,
+            productSpecList: cardItem.productSpecList,
+        })
+    }
+    
     const listItems = (listItem, id) => {
         return <li key={ id }>{ listItem }</li>
     }
@@ -44,7 +62,7 @@ function Card() {
             <Fragment key={ cardItem.id }>
                 <div className="card">
                     <div className="card-img">
-                        <img src={ photo } alt={ cardItem.photoDescription } />
+                        <img src={ cardItem.photo } alt={ cardItem.photoDescription } />
                         <span>R$ { cardItem.price }</span>
                     </div>
                     <div className="card-product">
@@ -54,9 +72,9 @@ function Card() {
                         </div>
                         <div className='card-product-list'>
                             <ul>
-                                { cardItem.productList.map(listItems) }
+                                { cardItem.productInfoList.map(listItems) }
                             </ul>
-                            <button>Adicione ao carrinho</button>
+                            <button onClick={ () => handleShowModal(cardItem) }>Mais</button>
                         </div>
                     </div>
                 </div>

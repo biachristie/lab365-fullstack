@@ -11,12 +11,12 @@ function Footer() {
         {
             id: 0,
             label: 'Produtos',
-            path: '#',
+            path: '/product',
         },
         {
             id: 1,
             label: 'Contato',
-            path: '#',
+            path: '/contact',
         },
         {
             id: 2,

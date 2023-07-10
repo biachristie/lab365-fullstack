@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 
 import { ProductModalContext } from "../../contexts/ProductModalContext";
+import Button from '../Button/Button';
 
 import "./ProductModal.css"
 
@@ -53,8 +54,10 @@ function ProductModal() {
                     </div>
                 </div>
                 <div className="productModal-btns">
-                    <button onClick={ handleCloseModal }>Fechar</button>
-                    <button>Comprar</button>
+                    <Button onClick={ handleCloseModal } value="Fechar" />
+                    <Button value="Comprar" />
+                    {/* <button onClick={ handleCloseModal }>Fechar</button>
+                    <button>Comprar</button> */}
                 </div>
             </div>
         </div>

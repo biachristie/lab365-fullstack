@@ -5,6 +5,8 @@ import './Card.css'
 
 import { ProductModalContext } from '../../contexts/ProductModalContext'
 
+import Button from '../Button/Button'
+
 function Card() {
     const cards = [
         {
@@ -74,7 +76,7 @@ function Card() {
                             <ul>
                                 { cardItem.productInfoList.map(listItems) }
                             </ul>
-                            <button onClick={ () => handleShowModal(cardItem) }>Mais</button>
+                            <Button onClick={ () => handleShowModal(cardItem) } value="Mais" />
                         </div>
                     </div>
                 </div>

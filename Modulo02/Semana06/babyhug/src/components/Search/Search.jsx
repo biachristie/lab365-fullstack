@@ -1,6 +1,7 @@
 import mglass from '../../assets/mglass.png'
 
 import Input from '../Input/Input';
+import Button from '../Button/Button';
 
 import './Search.css'
 
@@ -11,9 +12,10 @@ function Search() {
                 type="text"
                 className="search-input"
             />
-            <button type="submit" className="search-btn" >
-                <img src={ mglass } alt="Search icon" />
-            </button>
+            <Button 
+                type="submit" 
+                className="search-btn" 
+                value={ <img src={ mglass } alt="Search icon" /> } />
         </div>
     );
 }

@@ -13,19 +13,7 @@
 }
 
 .search-btn {
-    color: var(--color-snow);
-    font-size: 0.9rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    background-color: var(--color-mint);
-    border: none;
-    border-radius: 10px;
     padding: 8px 10px;
-    cursor: pointer;
-}
-
-.search-btn:hover {
-    background-color: var(--color-mint-dark);
 }
 
 .search-btn > img {

@@ -77,18 +77,5 @@
 
 .productModal-btns > button {
     place-self: end;
-    color: var(--color-snow);
-    font-size: 0.9rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    background-color: var(--color-mint);
-    border: none;
-    border-radius: 10px;
-    padding: 13px 20px 11px;
     margin-right: 10px;
-    cursor: pointer;
-}
-
-.productModal-btns > button:hover {
-    background-color: var(--color-mint-dark);
 }

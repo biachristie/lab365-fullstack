@@ -3,6 +3,7 @@ import { useContext, useState, Fragment } from 'react';
 import { UserContext } from '../../contexts/UserContext';
 
 import Input from '../Input/Input';
+import Button from '../Button/Button';
 
 import './ContactForm.css'
 
@@ -90,7 +91,7 @@ function ContactForm() {
                 <div id="character-counter">
                     <span>{ content } / 500 caracteres</span>
                 </div>
-                <button type="submit">Enviar</button>
+                <Button type="submit" value="Enviar" />
             </form>
         </div>
     );

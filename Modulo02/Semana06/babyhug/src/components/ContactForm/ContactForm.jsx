@@ -1,5 +1,8 @@
-import { useContext, useState } from 'react';
+import { useContext, useState, Fragment } from 'react';
+
 import { UserContext } from '../../contexts/UserContext';
+
+import Input from '../Input/Input';
 
 import './ContactForm.css'
 
@@ -29,39 +32,51 @@ function ContactForm() {
         console.log(usersList);
     }
 
+    const inputData = [
+        {
+            id: 0,
+            type: 'text',
+            placeholder: 'Digite seu nome...',
+            label: 'name',
+            value: 'Nome'
+        },
+        {
+            id: 1,
+            type: 'tel',
+            placeholder: 'Digite seu telefone...',
+            label: 'telephone',
+            value: 'Telefone'
+        },
+        {
+            id: 2,
+            type: 'email',
+            placeholder: 'Digite seu email...',
+            label: 'email',
+            value: 'E-mail'
+        },
+    ]
+
+    const listFieldsets = (input) => {
+        return (
+            <Fragment key={ input.id }>
+                <fieldset className="contactForm-field">
+                    <label className='contactForm-label' htmlFor={ input.label }>{ input.value }</label>
+                    <Input 
+                        type={ input.type }
+                        placeholder={ input.placeholder }
+                        id={ input.label }
+                        onChange={ handleInput }
+                    />
+                </fieldset>
+            </Fragment>
+        )
+    }
+
     return (
         <div className="contactForm-container">
             <h1 className="contactForm-title">Deixe o seu recado</h1>
             <form className="contactForm-form" onSubmit={ handleSubmit }>
-                <div>
-                    <fieldset className="contactForm-field">
-                        <label className='contactForm-label' htmlFor="name">Nome</label>
-                        <input 
-                            type="text"
-                            placeholder="Digite seu nome..."
-                            id="name"
-                            onChange={ handleInput }
-                        />
-                    </fieldset>
-                    <fieldset className="contactForm-field">
-                        <label className='contactForm-label' htmlFor="telephone">Telefone</label>
-                        <input 
-                            type="tel"
-                            placeholder="Digite seu telefone..."
-                            id="telephone"
-                            onChange={ handleInput }
-                        />
-                    </fieldset>
-                </div>
-                <fieldset className="contactForm-field">
-                    <label className='contactForm-label' htmlFor="email">E-mail</label>
-                    <input
-                        type="email"
-                        placeholder="Digite seu email..."
-                        id="email"
-                        onChange={ handleInput }
-                    />
-                </fieldset>
+                { inputData.map(listFieldsets) }
                 <fieldset className="contactForm-field">
                     <label className='contactForm-label' htmlFor="message">Mensagem</label>
                     <textarea 

@@ -7,13 +7,8 @@
 }
 
 .search-input {
-    color: #5a5a5a;
-    padding-left: 15px;
-    border: 1px solid #dbdbdb;
-    border-radius: 7px;
     height: 42px;
     width: 50%;
-    outline: none;
     margin-right: 10px;
 }
 

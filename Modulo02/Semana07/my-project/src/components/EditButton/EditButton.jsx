@@ -1,11 +1,11 @@
 import React from 'react'
 
-function EditButton() {
+function EditButton({ setShow }) {
+    const openModal = () => setShow(true)
+
     return (
         <React.Fragment>
-            <button>
-                Edit
-            </button>
+            <button id='card-editbtn-btn' onClick={ openModal }>Edit</button>
         </React.Fragment>
     );
 }

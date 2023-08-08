@@ -1,9 +1,31 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import './Form.css'
 
-function Form({ setUsers }) {
+function Form({ setUsers, userId, userCard, setShow }) {
+    const [showButton, setShowButton] = useState(false)
+    const [inputData, setInputData] = useState({
+        nickname: '',
+        age: '',
+        email: '',
+        password: ''
+    })
+
+    useEffect(() => {
+        setShowButton(true)
+
+        if (userCard) {
+            setInputData({
+                nickname: userCard.nickname,
+                age: userCard.age,
+                email: userCard.email,
+                password: userCard.password
+            })
+        }
+    }, [])
+
     const [user, setUser] = useState({
+        id: userId,
         nickname: '',
         age: '',
         email: '',
@@ -18,6 +40,7 @@ function Form({ setUsers }) {
 
     const isFormValid = () => {
         let validate = true
+
         const data = Object.entries(user);
         
         data.forEach(([key]) => {
@@ -30,10 +53,15 @@ function Form({ setUsers }) {
     const handleSubmit = (e) => {
         e.preventDefault()
         
-        isFormValid  
-        ? setUsers(prevUsers => [...prevUsers, user])
-        : alert(`Verify input values`)
+        if(isFormValid) {
+            setUsers(prevUsers => [...prevUsers, user])
+            e.target.reset()
+        } else {
+            alert(`Verify input values`)
+        }
     }
+
+    const closeModal = () => setShow(false)
 
     return ( 
         <React.Fragment>
@@ -45,6 +73,7 @@ function Form({ setUsers }) {
                         className='form-input'
                         id= "nickname" 
                         placeholder='Enter your nickname' 
+                        value={ inputData.nickname }
                         onInput={ handleInput }
                         required />
                 </fieldset>
@@ -55,6 +84,7 @@ function Form({ setUsers }) {
                         className='form-input'
                         id= "age" 
                         placeholder='Enter your age'
+                        value={ inputData.age }
                         onInput={ handleInput }
                         required />
                 </fieldset>
@@ -65,6 +95,7 @@ function Form({ setUsers }) {
                         className='form-input'
                         id= "email"
                         placeholder='Enter your e-mail' 
+                        value={ inputData.email }
                         onInput={ handleInput }
                         required />
                 </fieldset>
@@ -75,10 +106,12 @@ function Form({ setUsers }) {
                         className='form-input'
                         id= "password"
                         placeholder='Enter your password'
+                        value={ inputData.password }
                         onInput={ handleInput }
                         required />
                 </fieldset>
                 <button type="submit" className='form-btn' >Subscribe</button>
+                <button type="button" className='form-btn' onClick={ closeModal } hidden={ !showButton } >Cancel</button>
             </form>
         </React.Fragment>
     )

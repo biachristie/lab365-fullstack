@@ -6,6 +6,7 @@ import Input from '../Input/Input';
 import Button from '../Button/Button';
 
 import './ContactForm.css'
+import { useEffect } from 'react';
 
 function ContactForm() {
     const [data, setData] = useState({
@@ -15,22 +16,43 @@ function ContactForm() {
         message: ''
     })
     const [content, setContent] = useState(0)
+    const [isDisabled, setIsDisabled] = useState(true)
 
     const { setUser, usersList, setUsersList } = useContext(UserContext)
 
+    const checkFormValidity = () => {
+        const isFormValid = Object.values(data).every(value => value !== '')
+        setIsDisabled(!isFormValid)
+    }
+
+    useEffect(() => {
+        checkFormValidity()
+    }, [data])
+
+    const validateEmail = (value) => {
+        if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value) ) return false
+
+        return true
+    }
+
     const handleInput = (e) => {
         const { value, id } = e.target
-        setData({ ...data, [id]: value })
         
+        setData({ ...data, [id]: value })
+
         if (id === 'message') { setContent(value.length) }
     }
 
     const handleSubmit = (e) => {
         e.preventDefault()
 
+        if (validateEmail(data.email)) {
+            alert('Endereço de e-mail não é válido')
+            return
+        }
+
         setUser(data)
         setUsersList([ ...usersList, data ])
-        console.log(usersList);
     }
 
     const inputData = [
@@ -91,7 +113,7 @@ function ContactForm() {
                 <div id="character-counter">
                     <span>{ content } / 500 caracteres</span>
                 </div>
-                <Button type="submit" value="Enviar" />
+                <Button type="submit" value="Enviar" disabled={ isDisabled } />
             </form>
         </div>
     );

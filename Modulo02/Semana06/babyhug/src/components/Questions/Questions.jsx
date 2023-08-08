@@ -7,23 +7,23 @@ function Questions() {
     const questions = [
         {
             id: 0,
-            title: 'Lorem ipsum?',
-            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, modi facilis nemo aperiam nobis porro asperiores fuga obcaecati atque sed id ratione perspiciatis quidem exercitationem, aspernatur odio sapiente illum corporis.',
+            question: 'Lorem ipsum?',
+            answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, modi facilis nemo aperiam nobis porro asperiores fuga obcaecati atque sed id ratione perspiciatis quidem exercitationem, aspernatur odio sapiente illum corporis.',
         },
         {
             id: 1,
-            title: 'Lorem ipsum?',
-            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, modi facilis nemo aperiam nobis porro asperiores fuga obcaecati atque sed id ratione perspiciatis quidem exercitationem, aspernatur odio sapiente illum corporis.',
+            question: 'Lorem ipsum?',
+            answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, modi facilis nemo aperiam nobis porro asperiores fuga obcaecati atque sed id ratione perspiciatis quidem exercitationem, aspernatur odio sapiente illum corporis.',
         },
         {
             id: 2,
-            title: 'Lorem ipsum?',
-            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, modi facilis nemo aperiam nobis porro asperiores fuga obcaecati atque sed id ratione perspiciatis quidem exercitationem, aspernatur odio sapiente illum corporis.',
+            question: 'Lorem ipsum?',
+            answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, modi facilis nemo aperiam nobis porro asperiores fuga obcaecati atque sed id ratione perspiciatis quidem exercitationem, aspernatur odio sapiente illum corporis.',
         },
         {
             id: 3,
-            title: 'Lorem ipsum?',
-            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, modi facilis nemo aperiam nobis porro asperiores fuga obcaecati atque sed id ratione perspiciatis quidem exercitationem, aspernatur odio sapiente illum corporis.',
+            question: 'Lorem ipsum?',
+            answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, modi facilis nemo aperiam nobis porro asperiores fuga obcaecati atque sed id ratione perspiciatis quidem exercitationem, aspernatur odio sapiente illum corporis.',
         },
         
     ]
@@ -34,10 +34,10 @@ function Questions() {
                 <div className="question">
                     <details>
                         <summary className="question-title">
-                            <p>{ question.title }</p>
+                            <p>{ question.question }</p>
                         </summary>
                         <div className="question-answer">
-                            <p>{ question.description }</p>
+                            <p>{ question.answer }</p>
                         </div>
                     </details>
                 </div>
@@ -55,7 +55,7 @@ function Questions() {
 Questions.propTypes = {
     questions: PropTypes.shape({
         id: PropTypes.number.isRequired,
-        title: PropTypes.number.isRequired,
+        title: PropTypes.string.isRequired,
         description: PropTypes.string.isRequired,
     })
 }

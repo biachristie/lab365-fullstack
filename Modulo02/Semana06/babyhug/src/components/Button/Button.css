@@ -13,3 +13,8 @@ button {
 button:hover {
     background-color: var(--color-mint-dark);
 }
+
+button:disabled {
+    background-color: var(--color-porcelain);
+    cursor: not-allowed;
+}

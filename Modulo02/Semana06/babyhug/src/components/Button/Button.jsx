@@ -39,7 +39,10 @@ function Button({ type, onClick, value, className, disabled }) {
 Button.propTypes = {
     type: PropTypes.string,
     onClick: PropTypes.func,
-    value: PropTypes.string,
+    value: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.node,
+    ]),
     className: PropTypes.string,
     disabled: PropTypes.bool
 }

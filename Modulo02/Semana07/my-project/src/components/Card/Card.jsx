@@ -1,11 +1,12 @@
 import EditButton from "../EditButton/EditButton";
 import LikeButton from "../LikeButton/LikeButton";
+import Modal from "../Modal/Modal";
 
 import "./Card.css"
 
-function Card({ users }) {
+function Card({ users, show, setShow }) {
     const renderList = (user) => {
-        return  <div key={ user.nickname } className="card">
+        return  <div key={ user.id } className="card" >
                     <ul className="card-list">
                         <li>Nickname: { user.nickname }</li>
                         <li>Age: { user.age }</li>
@@ -16,9 +17,10 @@ function Card({ users }) {
                             { <LikeButton /> }
                         </div>
                         <div id="card-editbtn">
-                            { <EditButton /> }
+                            { <EditButton setShow={ setShow } /> }
                         </div>
                     </div>
+                    <Modal show={ show } setShow={ setShow } user={ user } />
                 </div>
     }
     

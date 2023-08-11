@@ -35,13 +35,19 @@ function ProductPage() {
         const productExists = cartItems.find(item => item.id === product.id)
         
         if (productExists) {
-            setCartItems(cartItems.map(item => {
+            const newCartItems = cartItems.map(item => {
                 return item.id === product.id 
                 ? { ...productExists, quantity: productExists.quantity + 1}
                 : item 
-            }))
+            })
+
+            setCartItems(newCartItems)
+            localStorage.setItem('cartItems', JSON.stringify(newCartItems))
         } else {
-            setCartItems([ ...cartItems, { ...product, quantity: 1 } ])
+            const newCartItems = [ ...cartItems, { ...product, quantity: 1 } ]
+            
+            setCartItems(newCartItems)
+            localStorage.setItem('cartItems', JSON.stringify(newCartItems))
         }
     }
 

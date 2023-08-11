@@ -1,4 +1,4 @@
-import { useContext } from "react"
+import { useContext, useEffect, useState } from "react"
 import Badge from '@mui/joy/Badge'
 import Box from '@mui/joy/Box'
 import Button from '@mui/joy/Button'
@@ -12,7 +12,7 @@ import { Search, ShoppingCartOutlined } from '@mui/icons-material'
 import { CartContext } from "../../context/Cart/Cart.context"
 
 export default function Header() {
-    const { cartItems } = useContext(CartContext)
+    const { totalCartItems } = useContext(CartContext)
 
     return (
         <Box component="nav" aria-label="NOME" sx={{ flexGrow: 1, backgroundColor: "#C41C1C" }}>
@@ -61,7 +61,7 @@ export default function Header() {
                         <Badge 
                             variant="outlined" 
                             color="primary" 
-                            badgeContent={ cartItems.length }
+                            badgeContent={ totalCartItems }
                         >
                             <ShoppingCartOutlined />
                         </Badge>

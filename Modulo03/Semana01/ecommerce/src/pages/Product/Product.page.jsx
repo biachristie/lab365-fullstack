@@ -27,10 +27,29 @@ function ProductPage() {
         )
     }
 
-    const { cartItems, setCartItems } = useContext(CartContext)
+    const { cartItems, setCartItems, setTotalCartItems } = useContext(CartContext)
+
+    useEffect(() => { calcTotalCartItems() }, [cartItems])
 
     const onAddToCart = (product) => {
-        setCartItems([ ...cartItems, product ])
+        const productExists = cartItems.find(item => item.id === product.id)
+        
+        if (productExists) {
+            setCartItems(cartItems.map(item => {
+                return item.id === product.id 
+                ? { ...productExists, quantity: productExists.quantity + 1}
+                : item 
+            }))
+        } else {
+            setCartItems([ ...cartItems, { ...product, quantity: 1 } ])
+        }
+    }
+
+    const calcTotalCartItems = () => {
+        let tempTotalItems = 0
+
+        cartItems.forEach( item => tempTotalItems += item.quantity )
+        setTotalCartItems(tempTotalItems)
     }
 
     return (

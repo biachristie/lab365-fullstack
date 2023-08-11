@@ -3,14 +3,17 @@ import PropTypes from "prop-types"
 
 export const CartContext = createContext({
     cartItems: [],
-    setCartItems: () => {}
+    setCartItems: () => {},
+    totalCartItems: 0,
+    setTotalCartItems: () => {}
 })
 
 export const CartProvider = ({ children }) => {
     const [cartItems, setCartItems] = useState([])
+    const [totalCartItems, setTotalCartItems] = useState(0)
 
     return(
-        <CartContext.Provider value={{ cartItems, setCartItems }}>
+        <CartContext.Provider value={{ cartItems, setCartItems, totalCartItems, setTotalCartItems }}>
             { children }
         </CartContext.Provider>
     )

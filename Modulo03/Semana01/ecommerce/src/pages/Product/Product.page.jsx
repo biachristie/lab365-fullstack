@@ -1,14 +1,14 @@
-import { useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 
 import Header from "../../components/Header/Header.component"
 import ProductCard from "../../components/ProductCard/ProductCard.component"
 import { ProductService } from "../../services/Product/Product.service"
+import { CartContext } from "../../context/Cart/Cart.context"
 
 import "./Product.page.css"
 
 function ProductPage() {
     const [products, setProducts] = useState()
-    console.log(products);
 
     useEffect(() => {
         ProductService.Get().then(result => setProducts(result.products))
@@ -22,8 +22,15 @@ function ProductPage() {
                 productName={ product.title }
                 productCurrency= 'R$' 
                 productPrice={ product.price }
+                onClick={ () => onAddToCart(product) }
             />
         )
+    }
+
+    const { cartItems, setCartItems } = useContext(CartContext)
+
+    const onAddToCart = (product) => {
+        setCartItems([ ...cartItems, product ])
     }
 
     return (

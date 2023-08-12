@@ -1,13 +1,13 @@
-import { useContext, useEffect, useState } from "react"
-import Badge from '@mui/joy/Badge'
-import Box from '@mui/joy/Box'
-import Button from '@mui/joy/Button'
-import List from '@mui/joy/List'
-import ListItem from '@mui/joy/ListItem'
-import ListItemButton from '@mui/joy/ListItemButton'
-import ListItemDecorator from '@mui/joy/ListItemDecorator'
-import Input from '@mui/joy/Input'
-import { Search, ShoppingCartOutlined } from '@mui/icons-material'
+import { useContext } from "react"
+import Badge from "@mui/joy/Badge"
+import Box from "@mui/joy/Box"
+import Button from "@mui/joy/Button"
+import List from "@mui/joy/List"
+import ListItem from "@mui/joy/ListItem"
+import ListItemButton from "@mui/joy/ListItemButton"
+import ListItemDecorator from "@mui/joy/ListItemDecorator"
+import Input from "@mui/joy/Input"
+import { Search, ShoppingCartOutlined } from "@mui/icons-material"
 
 import { CartContext } from "../../context/Cart/Cart.context"
 

@@ -1,0 +1,19 @@
+.cart-container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    justify-items: center;
+    align-items: start;
+    gap: 15px;
+    margin: 0 20px;
+}
+
+.cart-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.cart-total-card {
+    width: 100%;
+}

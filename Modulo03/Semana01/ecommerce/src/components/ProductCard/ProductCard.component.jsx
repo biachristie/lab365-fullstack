@@ -16,15 +16,15 @@ export default function ProductCard({
     productPrice, 
     onClick
 }) {
-        return (
-            <Card sx={{ width: 200, maxWidth: "100%", boxShadow: "lg" }}>
+    return (
+        <Card sx={{ width: 200, maxWidth: "100%", boxShadow: "lg" }}>
             <CardOverflow>
                 <AspectRatio sx={{ minWidth: 200 }}>
-                <img
-                    src={ productImage }
-                    loading="lazy"
-                    alt=""
-                />
+                    <img
+                        src={ productImage }
+                        loading="lazy"
+                        alt=""
+                    />
                 </AspectRatio>
             </CardOverflow>
             <CardContent>
@@ -62,6 +62,6 @@ export default function ProductCard({
                     Adicione ao carrinho
                 </Button>
             </CardOverflow>
-            </Card>
-        )
+        </Card>
+    )
 }

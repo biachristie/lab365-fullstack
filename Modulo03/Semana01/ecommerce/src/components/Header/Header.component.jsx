@@ -1,4 +1,4 @@
-import { useContext } from "react"
+import { useContext, useRef } from "react"
 import Badge from "@mui/joy/Badge"
 import Box from "@mui/joy/Box"
 import Button from "@mui/joy/Button"
@@ -10,9 +10,18 @@ import Input from "@mui/joy/Input"
 import { Search, ShoppingCartOutlined } from "@mui/icons-material"
 
 import { CartContext } from "../../context/Cart/Cart.context"
+import { SearchContext } from "../../context/Search/Search.context"
 
-export default function Header() {
+export default function Header({ hideSearch }) {
     const { totalCartItems } = useContext(CartContext)
+    const { setSearchedTerm } = useContext(SearchContext)
+
+    const inputRef = useRef()
+
+    const onSearch = () => { 
+        const inputValue = inputRef.current.value
+        setSearchedTerm(inputValue)
+    }
 
     return (
         <Box component="nav" aria-label="NOME" sx={{ flexGrow: 1, backgroundColor: "#C41C1C" }}>
@@ -38,19 +47,26 @@ export default function Header() {
                         </ListItemDecorator>
                     </ListItemButton>
                 </ListItem>
-                <ListItem role="searchbar">
+                <div role="searchbar" hidden={ hideSearch }>
                     <Input
                         placeholder="Filtrar produtos"
+                        size="sm"
+                        slotProps={{
+                            input: {
+                                ref: inputRef
+                            }
+                        }}
                         endDecorator={ 
                             <Button 
                                 color="neutral" 
                                 variant="plain"
+                                onClick={ onSearch }
                             >
                                 <Search />
                             </Button> 
                         }
                     />
-                </ListItem>
+                </div>
                 <ListItem role="none">
                     <ListItemButton
                         role="menuitem"

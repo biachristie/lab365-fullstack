@@ -13,9 +13,11 @@ export const CartProvider = ({ children }) => {
     const [totalCartItems, setTotalCartItems] = useState(0)
 
     const storedTotalItems = localStorage.getItem('totalCartItems')
+    const storedCartItems = localStorage.getItem('cartItems')
     
     useEffect(() => {
         if (storedTotalItems) { setTotalCartItems(Number(storedTotalItems)) }
+        if (storedCartItems) { setCartItems(JSON.parse(storedCartItems)) }
     }, [])
 
     useEffect(() => {

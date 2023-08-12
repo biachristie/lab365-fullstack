@@ -1,4 +1,5 @@
 import * as React from "react"
+import { useNavigate } from "react-router-dom"
 import Button from "@mui/joy/Button"
 import Card from "@mui/joy/Card"
 import CardContent from "@mui/joy/CardContent"
@@ -8,6 +9,8 @@ import { ButtonGroup, Stack } from "@mui/material"
 export default function CartTotalCard({ 
     cartTotal
 }) {
+    const navigate = useNavigate()
+
     return (
         <Card 
             variant="outlined"
@@ -46,8 +49,19 @@ export default function CartTotalCard({
                     aria-label="card-item-group"
                     sx={{ display: "flex", flexDirection: "column", gap: "10px" }}
                 >
-                    <Button color="danger" sx={{ display: "block", width: "100%" }}>Continuar comprando</Button>
-                    <Button color="danger" sx={{ display: "block", width: "100%" }}>Finalizar compra</Button>
+                    <Button 
+                        color="danger" 
+                        sx={{ display: "block", width: "100%" }}
+                        onClick={ () => navigate("/produtos") }
+                    >
+                        Continuar comprando
+                    </Button>
+                    <Button 
+                        color="danger" 
+                        sx={{ display: "block", width: "100%" }}
+                    >
+                        Finalizar compra
+                    </Button>
                 </ButtonGroup>
             </Stack>
         </Card>

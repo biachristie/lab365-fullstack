@@ -40,7 +40,7 @@ function CartPage() {
 
     return (
         <>
-            <Header />
+            <Header hideSearch={ true } />
             <div className="cart-container">
                 <section className="cart-cards">
                     { cartItems && cartItems.map(renderCartProductCard) }

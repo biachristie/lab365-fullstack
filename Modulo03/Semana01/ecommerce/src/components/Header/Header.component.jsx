@@ -24,15 +24,22 @@ export default function Header({ hideSearch }) {
     }
 
     return (
-        <Box component="nav" aria-label="NOME" sx={{ flexGrow: 1, backgroundColor: "#C41C1C" }}>
+        <Box 
+            component="nav" 
+            aria-label="NOME" 
+            sx={{ 
+                backgroundColor: "#C41C1C", 
+                padding: "10px 5px",
+                marginBottom: "30px" 
+            }}
+        >
             <List
                 role="header"
                 orientation="horizontal"
                 sx={{ 
                     display: "flex", 
                     justifyContent: "space-between",
-                    alignItems: "center",
-                    margin: "10px 0 30px",
+                    alignItems: "center"
                 }}
                 color="danger"
             >

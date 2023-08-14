@@ -1,0 +1,19 @@
+.checkout-container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    justify-items: center;
+    align-items: start;
+    gap: 15px;
+    margin: 0 20px;
+}
+
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.checkout-total-card {
+    width: 100%;
+}

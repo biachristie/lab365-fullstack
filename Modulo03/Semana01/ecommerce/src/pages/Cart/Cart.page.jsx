@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react"
+import { useContext, useEffect } from "react"
 
 import Header from "../../components/Header/Header.component"
 import CartCard from "../../components/CartCard/CartCard.component"
@@ -8,7 +8,7 @@ import { CartContext } from "../../context/Cart/Cart.context"
 import "./Cart.page.css"
 
 function CartPage() {
-    const { cartItems } = useContext(CartContext)
+    const { cartItems, setCartTotal } = useContext(CartContext)
 
     useEffect(() => {
         calcCartTotal()
@@ -25,8 +25,6 @@ function CartPage() {
             />
         )
     }
-
-    const [cartTotal, setCartTotal] = useState(0)
 
     const calcCartTotal = () => {
         let tempTotal = 0
@@ -46,7 +44,7 @@ function CartPage() {
                     { cartItems && cartItems.map(renderCartProductCard) }
                 </section>
                 <section className="cart-total-card">
-                    <CartTotalCard cartTotal={ cartTotal }/>
+                    <CartTotalCard/>
                 </section>
             </div>
         </>

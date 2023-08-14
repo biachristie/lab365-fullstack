@@ -40,7 +40,7 @@ export default function Header({ hideSearch }) {
                     <ListItemButton
                         role="brandlogo"
                         component="a"
-                        href="#navigation-menu"
+                        href="/produtos"
                     >
                         <ListItemDecorator>
                             Inserir LOGO
@@ -71,7 +71,7 @@ export default function Header({ hideSearch }) {
                     <ListItemButton
                         role="menuitem"
                         component="a"
-                        href="#navigation-menu"
+                        href="/carrinho"
                         aria-label="Shopping Cart"
                     >
                         <Badge 

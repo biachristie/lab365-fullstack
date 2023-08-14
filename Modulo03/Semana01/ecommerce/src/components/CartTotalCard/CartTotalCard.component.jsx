@@ -6,9 +6,11 @@ import CardContent from "@mui/joy/CardContent"
 import Typography from "@mui/joy/Typography"
 import { ButtonGroup, Stack } from "@mui/material"
 
-export default function CartTotalCard({ 
-    cartTotal
-}) {
+import { CartContext } from "../../context/Cart/Cart.context"
+
+export default function CartTotalCard() {
+    const { cartTotal } = useContext(CartContext)
+
     const navigate = useNavigate()
 
     return (
@@ -59,6 +61,7 @@ export default function CartTotalCard({
                     <Button 
                         color="danger" 
                         sx={{ display: "block", width: "100%" }}
+                        onClick={ () => navigate("/checkout") }
                     >
                         Finalizar compra
                     </Button>

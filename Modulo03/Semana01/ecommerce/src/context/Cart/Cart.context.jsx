@@ -5,15 +5,18 @@ export const CartContext = createContext({
     cartItems: [],
     setCartItems: () => {},
     totalCartItems: 0,
-    setTotalCartItems: () => {}
+    setTotalCartItems: () => {},
+    cartTotal: 0, 
+    setCartTotal: () => {}
 })
 
 export const CartProvider = ({ children }) => {
     const [cartItems, setCartItems] = useState([])
     const [totalCartItems, setTotalCartItems] = useState(0)
+    const [cartTotal, setCartTotal] = useState(0)
 
-    const storedTotalItems = localStorage.getItem('totalCartItems')
-    const storedCartItems = localStorage.getItem('cartItems')
+    const storedTotalItems = localStorage.getItem("totalCartItems")
+    const storedCartItems = localStorage.getItem("cartItems")
     
     useEffect(() => {
         if (storedTotalItems) { setTotalCartItems(Number(storedTotalItems)) }
@@ -21,11 +24,11 @@ export const CartProvider = ({ children }) => {
     }, [])
 
     useEffect(() => {
-        localStorage.setItem('totalCartItems', JSON.stringify(totalCartItems))
+        localStorage.setItem("totalCartItems", JSON.stringify(totalCartItems))
     }, [totalCartItems])
 
     return(
-        <CartContext.Provider value={{ cartItems, setCartItems, totalCartItems, setTotalCartItems }}>
+        <CartContext.Provider value={{ cartItems, setCartItems, totalCartItems, setTotalCartItems, cartTotal, setCartTotal }}>
             { children }
         </CartContext.Provider>
     )

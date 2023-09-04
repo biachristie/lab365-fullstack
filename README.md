@@ -10,6 +10,9 @@
 <br>
 
 
+
+✔️
+
 Curso de capacitação EAD oferecido pelo Lab365 / SENAI-SC aos alunos selecionados a partir do programa Floripa Mais Tec. Esse curso tem como objetivo repassar os conhecimentos necessários à formação de um desenvolvedor FullStack.
 
 <br>
@@ -20,11 +23,11 @@ Curso de capacitação EAD oferecido pelo Lab365 / SENAI-SC aos alunos seleciona
 
 ## Atividades
 
-**MÓDULO 1 - BACKEND** 
+**MÓDULO 1 - BACKEND**
 
 **Início**: 30/01/2023 | **Término**: 21/04/2023
-<br>
-<br>
+`<br>`
+`<br>`
 
 **Semana 01**
 
@@ -90,8 +93,8 @@ Curso de capacitação EAD oferecido pelo Lab365 / SENAI-SC aos alunos seleciona
 **MÓDULO 2 - FRONTEND**
 
 **Início**: 01/05/2023 | **Término**: 21/07/2023
-<br>
-<br>
+`<br>`
+`<br>`
 
 **Semana 01**
 
@@ -132,15 +135,15 @@ Curso de capacitação EAD oferecido pelo Lab365 / SENAI-SC aos alunos seleciona
 
 **Semana 09**
 
-* *Prop Drilling*, componentes de classe (com revisão de herança e polimorfismo) e *lifecycles*
+* *Prop Drilling*, componentes de classe (com revisão de herança e polimorfismo) e *lifecycles ✔️*
 
 **Semana 10**
 
-* *Composition*, estilos (Styled Components e Bootstrap), *Developer Tools* e *Deploy*
+* *Composition*, estilos (Styled Components e Bootstrap), *Developer Tools* e *Deploy ✔️*
 
 **Semanas 11 e 12**
 
-* **Projeto 2 - Individual**: Organização - utilização do GitHub e Trello na construção do projeto
+* **Projeto 2 - Individual**: Organização - utilização do GitHub e Trello na construção do projeto ✔️
 
 <br>
 <br>
@@ -148,45 +151,45 @@ Curso de capacitação EAD oferecido pelo Lab365 / SENAI-SC aos alunos seleciona
 **MÓDULO 3 - FULLSTACK**
 
 **Início**: 31/07/2023 | **Término**: 20/10/2023
-<br>
-<br>
+`<br>`
+`<br>`
 
 **Semana 01**
 
-* Conceitos Clean-Code (SOLID), arquiteturas e gestão do tempo
+* Construção de uma aplicação Front-End para revisão do módulo de React
 
 **Semana 02**
 
-* Revisão do módulo 1 com construção de mini-projeto
+* Aplicação de testes unitários usando abordagem TDD e testes de acessibilidade no projeto da semana anterior
 
 **Semana 03**
 
-* Aplicação de testes no mini-projeto
+* Construção de uma API Rest baseada no escopo da semana 3 para revisão do módulo de Node com Express.js
 
 **Semana 04**
 
-* Revisão do módulo 2 com construção de mini-projeto
+* *Deploy*, *Logging* e *Debug* usando o projeto da semana anterior
 
 **Semana 05**
 
-* Aplicação de testes no mini-projeto
+* *Containers*, Docker e visão geral de orquestrador (Kubernetes)
 
 **Semana 06**
 
-* Integração back-end e front-end no mini-projeto, tópicos avançados de Express e React
+* *Overview* Cloud, arquitetura em microserviços e CI/CD
 
 **Semana 07**
 
-* *Overview* Cloud, arquitetura em microserviços e CI/CD
+* Integração dos projetos criados nas semanas anteriores
 
 **Semana 08**
 
-* *Containers*, Docker e visão geral de orquestrador (Kubernetes)
+* Conceitos *Clean-Code*, SOLID e arquiteturas Front-End e Back-End
 
 **Semana 09**
 
-* *Deploy*, *Logging* e *Debug*
+* Infraestrutura, *Deploy*, gestão de tempo e programação colaborativa
 
-**Semana 10, 11 e 12**
+**Semana 10 e 11**
 
 * **Projeto 3 - em Squads**: Organização - utilização do GitHub e Trello na construção do projeto

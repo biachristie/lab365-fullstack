@@ -79,7 +79,7 @@ Curso de capacitação EAD oferecido pelo Lab365 / SENAI-SC aos alunos seleciona
 
 **Semana 10**
 
-* *Rendering*, *requests* (form e cookies) e documentação com Swagger ✔️
+* *Rendering*, *requests* (*form* e *cookies*) e documentação com Swagger ✔️
 * [Exercícios](https://github.com/biachristie/lab365-fullstack/tree/main/Modulo01/Semana09_10)
 
 **Semanas 11 e 12**
@@ -98,11 +98,11 @@ Curso de capacitação EAD oferecido pelo Lab365 / SENAI-SC aos alunos seleciona
 
 **Semana 01**
 
-* Introdução à metodologias ágeis, Scrum (papéis, artefatos e rotinas), revisão de versionamento e GitHub com Squads e GitFlow ✔️
+* Introdução à metodologias ágeis, *Scrum* (papéis, artefatos e rotinas), revisão de versionamento e GitHub com Squads e GitFlow ✔️
 
 **Semana 02**
 
-* Design e Figma: importância da prototipagem e *hands-on* da ferramenta ✔️
+* *Design* e Figma: importância da prototipagem e *hands-on* da ferramenta ✔️
 * Fundamentos: arquitetura cliente-servidor, introdução ao HTML e CSS ✔️
 * [Exercícios Figma](https://www.figma.com/file/ulwQazF6QqIYNEHJgTg7Ie/Exercicio?type=design&node-id=6%3A89&t=0DoKK8IX04qrIJkS-1)
 * [Exercícios Figma Tela Desktop](https://www.figma.com/proto/ulwQazF6QqIYNEHJgTg7Ie/Exercicio?page-id=6%3A89&type=design&node-id=6-92&viewport=382%2C-233%2C1&scaling=scale-down&starting-point-node-id=6%3A113)
@@ -144,6 +144,7 @@ Curso de capacitação EAD oferecido pelo Lab365 / SENAI-SC aos alunos seleciona
 **Semanas 11 e 12**
 
 * **Projeto 2 - Individual**: Organização - utilização do GitHub e Trello na construção do projeto ✔️
+* [Exercícios](https://github.com/biachristie/react-labmedical)
 
 <br>
 <br>
@@ -156,19 +157,21 @@ Curso de capacitação EAD oferecido pelo Lab365 / SENAI-SC aos alunos seleciona
 
 **Semana 01**
 
-* Construção de uma aplicação Front-End para revisão do módulo de React
+* Construção de uma aplicação Front-End para revisão do módulo de React ✔️
+* [Exercícios](https://github.com/biachristie/lab365-fullstack/tree/main/Modulo03/Semana01/ecommerce)
 
 **Semana 02**
 
-* Aplicação de testes unitários usando abordagem TDD e testes de acessibilidade no projeto da semana anterior
+* Aplicação de testes unitários usando abordagem TDD e testes de acessibilidade no projeto da semana anterior ✔️
 
 **Semana 03**
 
-* Construção de uma API Rest baseada no escopo da semana 3 para revisão do módulo de Node com Express.js
+* Construção de uma API Rest baseada no escopo da semana 3 para revisão do módulo de Node com Express.js ✔️
+* [Exercícios](https://github.com/biachristie/lab365-fullstack/tree/main/Modulo03/Semana03/backend)
 
 **Semana 04**
 
-* *Deploy*, *Logging* e *Debug* usando o projeto da semana anterior
+* *Deploy*, *Logging* e *Debug* usando o projeto da semana anterior ✔️
 
 **Semana 05**
 
